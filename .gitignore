@@ -2,3 +2,4 @@ notas_0.txt
 **/*.class
 *.pdf
 *.swp
+.vscode/*
