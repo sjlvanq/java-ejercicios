@@ -9,10 +9,14 @@ EOF
 }
 
 if [ $# -eq 0 ] || [ $1 = '-h' ]; then usage; fi
-tee ${1^}.java <<EOF
+
+nombrefmt=${1^}
+nombrefmt=$(echo $nombrefmt | tr -dC '![:alnum:]');
+
+tee $nombrefmt.java <<EOF
 //import 
 
-public class ${1^}
+public class $nombrefmt
 {
 	public static void main (String[] args)
 	{
