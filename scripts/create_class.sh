@@ -10,8 +10,7 @@ EOF
 
 if [ $# -eq 0 ] || [ $1 = '-h' ]; then usage; fi
 
-nombrefmt=${1^}
-nombrefmt=$(echo $nombrefmt | tr -dC '![:alnum:]');
+nombrefmt=$(echo ${1^} | sed s/"\.java$"//I | tr -dC '![:alnum:]');
 
 tee $nombrefmt.java <<EOF
 //import 
