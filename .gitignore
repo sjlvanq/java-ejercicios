@@ -3,3 +3,4 @@ notas_0.txt
 *.pdf
 *.swp
 .vscode/*
+**/.idea/*
