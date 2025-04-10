@@ -37,7 +37,7 @@ public class E0312
 			System.out.println("Crupier: -He pensado un número entre 0 y 9");
 			numeroSecreto = ruleta.nextInt(10);
 			System.out.printf("%s",numeroSecreto);
-			intentos = 0;
+			intentos = 3;
 			do {
 				System.out.print("Tú: -¿Acaso el ___ ?\rTú: -¿Acaso el _");
 				numeroJugado = crupier.nextInt();
@@ -49,10 +49,10 @@ public class E0312
 				
 				menorMayor = numeroSecreto < numeroJugado ? "menor" : "mayor";
 				System.out.printf("Crupier: -Es un número %s que %s. ", menorMayor, numeroJugado);
-				System.out.printf("Te quedan %s intentos.\n", 2-intentos);
+				System.out.printf("Te quedan %s intentos.\n", intentos-1);
 
-				intentos++;
-			} while ( intentos < 3 );
+				intentos--;
+			} while ( intentos > 0 );
 			if(intentos==3){System.out.printf("Crupier: -El número era el %s\n", numeroSecreto);}
 			System.out.printf("¿Juegas de nuevo? (s/n): ");
 			crupier.nextLine();
