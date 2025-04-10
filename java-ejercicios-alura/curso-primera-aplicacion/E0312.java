@@ -46,11 +46,11 @@ public class E0312
 					System.out.println("Crupier: -¡Lo has adivinado!");
 					break;
 				} 
-				else {
-					menorMayor = numeroSecreto < numeroJugado ? "menor" : "mayor";
-					System.out.printf("Crupier: -Es un número %s que %s. ", menorMayor, numeroJugado);
-					System.out.printf("Te quedan %s intentos.\n", 2-intentos);
-				}
+				
+				menorMayor = numeroSecreto < numeroJugado ? "menor" : "mayor";
+				System.out.printf("Crupier: -Es un número %s que %s. ", menorMayor, numeroJugado);
+				System.out.printf("Te quedan %s intentos.\n", 2-intentos);
+
 				intentos++;
 			} while ( intentos < 3 );
 			if(intentos==3){System.out.printf("Crupier: -El número era el %s\n", numeroSecreto);}
