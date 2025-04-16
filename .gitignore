@@ -4,3 +4,7 @@ notas_0.txt
 *.swp
 .vscode/*
 **/.idea/*
+#Eclipse
+**/.classpath
+**/.project
+*.prefs
