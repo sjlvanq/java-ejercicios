@@ -17,7 +17,7 @@ public class Principal {
 		herreria.addProducto("Hacha","Ideal para romper vidrios durante un incendio.", 4);
 		herreria.addProducto("Guadaña","Mantén tu jardín libre de vivos.", 5);
 		
-		while(Monedero.meAlcanzaParaAlgo(herreria) || herreria.isFundida()) {
+		while(Monedero.meAlcanzaParaAlgo(herreria) && !herreria.isFundida()) {
 			System.out.print("\n");
 			TiendaMenu.mostrar(herreria);
 			MonederoResumen.mostrar();
