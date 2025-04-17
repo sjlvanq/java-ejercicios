@@ -1,19 +1,21 @@
 package ui;
 
 import java.util.Collections;
+import java.util.List;
 
 import models.Monedero;
 import models.Producto;
 
-public class MonederoResumen { //implements PantallaImprimible {
+public class MonederoResumen {
 	
 	public static String construir() {
-		if(Monedero.getCompras().size()==0) return "";
+		List<Producto> compras = Monedero.getCompras();
+		if(compras.size()==0) return "";
 		StringBuilder sb = new StringBuilder();
 		
 		sb.append("_____ Compras _____\n");
-		Collections.sort(Monedero.getCompras());
-		for (Producto compra : Monedero.getCompras()) {
+		Collections.sort(compras);
+		for (Producto compra : compras) {
 			sb.append("%s\t\t$%d%n".formatted(compra.getNombre(), compra.getPrecio()));
 		}
 		sb.append("\n");
@@ -22,13 +24,6 @@ public class MonederoResumen { //implements PantallaImprimible {
 	
 	@Deprecated
 	public static void mostrar() {
-		if(Monedero.getCompras().size()==0) return;
-		
-		System.out.println("_____ Compras _____\n");
-		Collections.sort(Monedero.getCompras());
-		for (Producto compra : Monedero.getCompras()) {
-			System.out.println("%s\t\t$%d".formatted(compra.getNombre(), compra.getPrecio()));
-		}
-		System.out.print("\n");
+		System.out.print(MonederoResumen.construir());
 	}
 }
