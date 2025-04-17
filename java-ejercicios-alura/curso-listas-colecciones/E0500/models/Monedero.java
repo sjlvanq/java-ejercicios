@@ -1,6 +1,9 @@
 package models;
 
 import java.util.List;
+
+import ui.MonederoResumen;
+
 import java.util.ArrayList;
 
 public class Monedero {
@@ -35,5 +38,5 @@ public class Monedero {
 		return tienda.getProductos().stream().anyMatch(
 				prod -> prod.getPrecio() <= monedas);
 	}
-	
+		
 }

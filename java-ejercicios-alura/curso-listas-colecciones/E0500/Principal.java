@@ -19,14 +19,14 @@ public class Principal {
 		
 		while(Monedero.meAlcanzaParaAlgo(herreria) && !herreria.isFundida()) {
 			System.out.print("\n");
-			TiendaMenu.mostrar(herreria);
-			MonederoResumen.mostrar();
+			System.out.print(herreria);
+			System.out.print(MonederoResumen.construir());
 			TiendaPrompt.mostrar(herreria);
 			herreria.vender(TiendaPrompt.leer(lector)-1);
 			
 		}
 				
-		System.out.println("\n¡Gracias por su compra!");
+		System.out.println("\n¡Gracias por su compra!\n");
 		MonederoResumen.mostrar();
 		
 	}

@@ -1,6 +1,8 @@
 package models;
 import java.util.ArrayList;
 
+import ui.TiendaMenu;
+
 public class Tienda {
 	private String nombre;
 	private String descripcion;
@@ -51,4 +53,10 @@ public class Tienda {
 			System.out.println("Excepción no manejada... aún\nValor de entrada incorrecto\n");
 		}
 	}
+	
+	@Override
+	public String toString() {
+		return TiendaMenu.construir(this);
+	}
+	
 }
