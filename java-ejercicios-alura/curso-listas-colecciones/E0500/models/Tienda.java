@@ -44,7 +44,8 @@ public class Tienda {
 	}
 
 	public boolean vender(int itemIndex) {
-		try {
+		if(itemIndex >= 0 && itemIndex < productos.size())
+		{
 			if(Monedero.comprar(productos.get(itemIndex))) {
 				this.productos.remove(itemIndex);
 				return true;
@@ -52,8 +53,9 @@ public class Tienda {
 				System.out.println("No se pudo concretar la compra por falta de monedas");
 				return false;
 			}
-		} catch (RuntimeException e) {
-			System.out.println("Excepción no manejada... aún\nValor de entrada incorrecto\n");
+		} 
+		else {
+			System.out.println("Índice de producto incorrecto\n");
 			return false;
 		}
 	}
