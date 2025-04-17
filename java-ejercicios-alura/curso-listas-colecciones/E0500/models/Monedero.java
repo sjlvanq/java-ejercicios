@@ -7,10 +7,13 @@ public class Monedero {
 	private static int monedas;
 	private static List<Producto> compras = new ArrayList<>();
 	
-	public static void comprar(Producto producto) {
-		if(producto.getPrecio() <= Monedero.monedas) {
+	public static boolean comprar(Producto producto) {
+		if(producto.getPrecio() > Monedero.monedas) {
+			return false;
+		} else {
 			monedas -= producto.getPrecio();
 			compras.add(producto);
+			return true;
 		}
 	}	
 	

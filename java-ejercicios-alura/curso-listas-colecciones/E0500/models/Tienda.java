@@ -42,9 +42,10 @@ public class Tienda {
 
 	public void vender(int itemIndex) {
 		try {
-			if(Monedero.getMonedas() >= productos.get(itemIndex).getPrecio()) {
-				Monedero.comprar(productos.get(itemIndex));
+			if(Monedero.comprar(productos.get(itemIndex))) {
 				this.productos.remove(itemIndex);
+			} else {
+				System.out.println("No se pudo concretar la compra por falta de monedas");
 			}
 		} catch (RuntimeException e) {
 			System.out.println("Excepción no manejada... aún\nValor de entrada incorrecto\n");
