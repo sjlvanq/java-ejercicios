@@ -1,5 +1,6 @@
 package ui;
 import models.Tienda;
+import models.Producto;
 
 public class TiendaMenu { //implements PantallaImprimible {
 	
@@ -13,11 +14,12 @@ public class TiendaMenu { //implements PantallaImprimible {
 		} else {
 			// Imprime lista de productos con precio
 			for(int i=1; i<=tienda.countProductos(); i++) {
+				Producto producto = tienda.getProductoAt(i-1);
 				sb.append(
 						"%d.\t%s ($%d)%n"
 							.formatted( 
-								i, tienda.getProductoAt(i-1).getNombre(), 
-								tienda.getProductoAt(i-1).getPrecio()
+								i, producto.getNombre(), 
+								producto.getPrecio()
 							));
 				sb.append("\t%s%n".formatted(tienda.getProductoAt(i-1).getDescripcion()));
 			}
@@ -26,26 +28,4 @@ public class TiendaMenu { //implements PantallaImprimible {
 		return sb.toString();
 	}
 	
-	@Deprecated
-	public static void mostrar(Tienda tienda) {
-		System.out.println("_____ %s _____".formatted(tienda.getNombre()));
-		System.out.println("%s%n".formatted(tienda.getDescripcion()));
-		
-		// Notifica fañta de stock
-		if(tienda.isFundida()) {
-			System.out.println("No quedan productos en la tienda");
-		} else {
-			// Imprime lista de productos con precio
-			for(int i=1; i<=tienda.countProductos(); i++) {
-				System.out.println(
-						"%d.\t%s ($%d)"
-							.formatted( 
-								i, tienda.getProductoAt(i-1).getNombre(), 
-								tienda.getProductoAt(i-1).getPrecio()
-							));
-				System.out.println("\t"+tienda.getProductoAt(i-1).getDescripcion());
-			}
-		}
-		System.out.print("\n");
-	}
 }
