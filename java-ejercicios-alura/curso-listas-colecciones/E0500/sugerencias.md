@@ -24,9 +24,9 @@ Este documento fue generado por ChatGPT a partir de una revisión del código de
    - **Validación del rango de opciones**: Agregar validaciones para asegurarse de que el número ingresado esté dentro de los límites de productos disponibles.
 
 ## 5. **Mejoras en la clase `MonederoResumen`:**
-   - **Evitar múltiples llamadas a Monedero.getCompras()**
+   - **Evitar múltiples llamadas a Monedero.getCompras()**.
 
 ## 6. **Mejoras en la clase `TiendaMenu`:**
-   - **Evitar múltiples llamadas a getProductoAt(i-1)**: Estás llamando tres veces por iteración al mismo método.
+   - **Evitar múltiples llamadas a getProductoAt(i-1)**.
 
 
