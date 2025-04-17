@@ -1,5 +1,6 @@
 package models;
 import java.util.ArrayList;
+import java.util.List;
 
 import ui.TiendaMenu;
 
@@ -18,8 +19,8 @@ public class Tienda {
 		this.productos.add(new Producto(nombre, descripcion, precio));
 	}
 	
-	public ArrayList<Producto> getProductos() {
-		return productos;
+	public List<Producto> getProductos() {
+		return List.copyOf(productos);
 	}
 	
 	public Producto getProductoAt(int i) {
