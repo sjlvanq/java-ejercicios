@@ -2,7 +2,7 @@
 name: Sugerencia para curso-listas-colecciones/E0500
 about: Template para implementar las sugerencias generadas por ChatGPT
 title: ''
-labels: ''
+labels: curso-lista-colecciones
 assignees: sjlvanq
 
 ---
