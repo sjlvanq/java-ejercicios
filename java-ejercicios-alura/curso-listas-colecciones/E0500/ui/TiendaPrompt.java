@@ -9,7 +9,7 @@ import util.UIFunctions;
 public class TiendaPrompt { //implements PantallaImprimible {
 	
 	public static void mostrar(Tienda tienda) {
-		System.out.print("<Te quedan %s monedas>%nElige una opción %s: "
+		System.out.printf("<Te quedan %s monedas>%nElige una opción %s: "
 			.formatted(
 				Monedero.getMonedas(),
 				UIFunctions.serializaOpciones(tienda.countProductos())
