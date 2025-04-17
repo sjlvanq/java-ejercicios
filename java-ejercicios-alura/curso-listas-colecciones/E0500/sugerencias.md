@@ -4,6 +4,7 @@ Este documento fue generado por ChatGPT a partir de una revisión del código de
 
 
 ## 1. **Mejoras en la clase `Monedero`:**
+   - **Eficiencia con `StringBuilder`**: Usar `String` para concatenaciones en bucles genera muchas instancias nuevas (porque los strings son inmutables). Mejor usar `StringBuilder`.
    - **Evitar retorno directo de la lista de compras**: Utilizar `List.copyOf()` o crear una copia de la lista en lugar de retornarla directamente. Esto garantiza inmutabilidad.
    - **Mejorar validación al comprar productos**: Retornar un valor booleano en el método `comprar()` para indicar si la compra fue exitosa o no, y así notificar mejor al usuario o al sistema si no tiene suficiente dinero.
 
@@ -21,3 +22,11 @@ Este documento fue generado por ChatGPT a partir de una revisión del código de
 ## 4. **Mejoras en la clase `TiendaPrompt`:**
    - **Pequeño error en la impresión con `%n`**: Reemplazar el uso de `%n` dentro de `formatted()` por `\n` directamente o dividir las cadenas correctamente.
    - **Validación del rango de opciones**: Agregar validaciones para asegurarse de que el número ingresado esté dentro de los límites de productos disponibles.
+
+## 5. **Mejoras en la clase `MonederoResumen`:**
+   - **Evitar múltiples llamadas a Monedero.getCompras()**
+
+## 6. **Mejoras en la clase `TiendaMenu`:**
+   - **Evitar múltiples llamadas a getProductoAt(i-1)**: Estás llamando tres veces por iteración al mismo método.
+
+
