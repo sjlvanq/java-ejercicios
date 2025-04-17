@@ -43,15 +43,18 @@ public class Tienda {
 		return this.descripcion;
 	}
 
-	public void vender(int itemIndex) {
+	public boolean vender(int itemIndex) {
 		try {
 			if(Monedero.comprar(productos.get(itemIndex))) {
 				this.productos.remove(itemIndex);
+				return true;
 			} else {
 				System.out.println("No se pudo concretar la compra por falta de monedas");
+				return false;
 			}
 		} catch (RuntimeException e) {
 			System.out.println("Excepción no manejada... aún\nValor de entrada incorrecto\n");
+			return false;
 		}
 	}
 	
