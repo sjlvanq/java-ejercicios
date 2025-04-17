@@ -6,6 +6,11 @@ public class Producto implements Comparable<Producto>{
 	private String descripcion;
 	
 	public Producto(String nombre, String descripcion, int precio) {
+		if(precio <= 0) {
+			throw new IllegalArgumentException(
+					"(%s) El precio del producto no puede ser menor o igual a 0"
+					.formatted(nombre));
+		}
 		this.nombre = nombre;
 		this.descripcion = descripcion;
 		this.precio = precio;
