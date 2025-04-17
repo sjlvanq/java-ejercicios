@@ -1,9 +1,9 @@
 package models;
 
 public class Producto implements Comparable<Producto>{
-	private int precio;
-	private String nombre;
-	private String descripcion;
+	final private int precio;
+	final private String nombre;
+	final private String descripcion;
 	
 	public Producto(String nombre, String descripcion, int precio) {
 		if(precio <= 0) {

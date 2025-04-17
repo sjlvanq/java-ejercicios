@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import ui.TiendaMenu;
 
 public class Tienda {
-	private String nombre;
-	private String descripcion;
+	final private String nombre;
+	final private String descripcion;
 	private ArrayList<Producto> productos;
 	
 	public Tienda(String nombre, String descripcion){
