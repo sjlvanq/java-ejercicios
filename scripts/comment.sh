@@ -5,5 +5,5 @@ if [ $# -eq 0 ]; then
 fi
 
 echo '/*'
-echo $1 | fold -sw 77 | sed s/'^'/' * '/g
+echo "$1" | fold -sw 77 | sed s/'^'/' * '/g
 echo ' */'
