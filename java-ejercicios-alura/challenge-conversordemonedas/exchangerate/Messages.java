@@ -6,8 +6,8 @@ import java.util.PropertyResourceBundle;
 import java.util.MissingResourceException;
 
 public class Messages {
-	private static Locale locale = Locale.of("pt","BR");
-	//private static Locale locale = Locale.getDefault();
+	//private static Locale locale = Locale.of("pt","BR");
+	private static Locale locale = Locale.getDefault();
 	private static ResourceBundle bundle= PropertyResourceBundle.getBundle("exchangerate/i18n/lang", locale);
 
     public static void setLocale(Locale newLocale) {
