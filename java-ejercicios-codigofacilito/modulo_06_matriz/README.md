@@ -11,11 +11,11 @@ int numero = (int)(Math.random() * 100);
 
 A partir de la matriz anteriormente creada.
 
-* [\_] Mostrar en consola el promedio de la matriz.
-* [\_] Mostrar en consola el número mayor y la cantidad de veces que este se repite.
+* [V] Mostrar en consola el promedio de la matriz.
+* [V] Mostrar en consola el número mayor y la cantidad de veces que este se repite.
 * [\_] Mostrar en consola todos los números primos.
 * [\_] Mostrar en consola todos los números pares.
-* [\_] Mostrar en consola la suma de las diagonales
-* [\_] Mostrar en consola la suma de la la última fila.
+* [V] Mostrar en consola la suma de las diagonales
+* [V] Mostrar en consola la suma de la la última fila.
 * [\_] Mostrar en consola el mensaje "Cuadrado Mágico" si la matriz cataloga como un cuadrado mágico.
 
