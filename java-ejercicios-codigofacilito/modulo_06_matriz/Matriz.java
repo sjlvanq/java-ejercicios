@@ -37,6 +37,25 @@ public class Matriz
 			max, max_count)
 		);
 		
+		// Mostrar en consola todos los números primos
+		System.out.print("Primos: ");
+		for(int[] fila : miMatriz)
+			for(int celda : fila) {
+				int i=0;
+				for(i=2; i<celda; i++)
+					if(celda % i == 0) break;
+				if(i==celda){System.out.printf("%d ",celda);}
+			}
+		System.out.println();
+		
+		// Mostrar en consola todos los números pares
+		System.out.print("Pares: ");
+		for(int[] fila : miMatriz)
+			for(int celda : fila) {
+				if(celda % 2 == 0) System.out.printf("%d ", celda);
+			}
+		System.out.println();
+		
 		// Mostrar en consola la suma de las diagonales
 		int sum_di = 0, sum_id = 0;
 		for(int i=0, j=4; i<=4 && j>=0; i++, j--){
