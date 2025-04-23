@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Arreglo
 {
 	public static void main (String[] args)
@@ -45,7 +47,11 @@ public class Arreglo
 		} System.out.println();
 		
 		// Mostrar en consola el arreglo de forma ascendente.
-		// ...
+		Arrays.sort(miArreglo);
+		System.out.print("Ordenado: ");
+		for (int item : miArreglo) {
+			System.out.printf("%d ", item);
+		} System.out.println();
 		
 		// Mostrar en consola el promedio del arreglo.
 		int sum=0;

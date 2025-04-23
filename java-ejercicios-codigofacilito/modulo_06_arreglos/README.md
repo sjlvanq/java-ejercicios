@@ -16,7 +16,7 @@ A partir del arreglo anteriormente creado.
 * [V] Mostrar en consola el número menor.
 * [V] Mostrar en consola todos los números primos.
 * [V] Mostrar en consola todos los números pares.
-* [\_] Mostrar en consola el arreglo de forma ascendente.
+* [V] Mostrar en consola el arreglo de forma ascendente.
 * [V] Mostrar en consola el promedio del arreglo.
 * [V] Mostrar en consola la suma del primer y último elemento del arreglo.
 * [V] Mostrar en consola el mensaje "Existe cien" en dado caso el arreglo almacene por los menos un cien.
