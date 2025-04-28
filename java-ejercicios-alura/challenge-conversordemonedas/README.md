@@ -1,3 +1,5 @@
+
+
 [![Alura + Oracle ONE](https://app.aluracursos.com/form-one/assets/images/logo-aluralatam-oracle.svg)](https://aluracursos.com)
 
 <sub>Java Orientado a Objetos G8 - ONE </sub><br> 
@@ -7,6 +9,16 @@ Challenge: <ins>CONVERSOR DE DIVISAS</ins>
 
 <sup>Command-line client for interacting with the ExchangeRate-API service.</sup><br>
 Cliente de línea de comandos para interactuar con el servicio de ExchangeRate-API.
+
+-----
+
+> ⚠️ **NOTA IMPORTANTE:**  
+> Este proyecto ha cambiado de ubicación.  
+> Ahora se encuentra en un repositorio independiente.
+>
+> https://github.com/sjlvanq/exchangerate-api_client
+
+-----
 
 ## <sub>Features</sub><br>Características
 ![img](https://img.shields.io/badge/interface-CLI-blue)
