@@ -1,0 +1,37 @@
+/**************************************************************
+* ReadTextFile.java
+* Dean & Dean
+*
+* Esto lee datos desde un archivo de texto.
+**************************************************************/
+import java.util.Scanner;
+import java.io.*;
+public class ReadTextFile
+{
+public static void main(String[] args)
+{
+Scanner stdIn = new Scanner(System.in);
+Scanner fileIn;
+String line;
+try
+Abre el archivo.
+{
+System.out.print("Introduzca el nombre del archivo: ");
+fileIn = new Scanner(new FileReader(stdIn.nextLine()));
+while (fileIn.hasNextLine())
+{
+line = fileIn.nextLine(); ⎫
+Lee una línea desde el
+System.out.println(line); ⎬
+archivo y la imprime.
+⎭
+}
+fileIn.close();
+Cierra el archivo.
+}
+catch (FileNotFoundException e)
+{
+System.out.println("Error: " + e.getMessage());
+}
+} // end main
+} // end ReadTextFile class
