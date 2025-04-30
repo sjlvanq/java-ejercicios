@@ -8,3 +8,5 @@ notas_0.txt
 **/.classpath
 **/.project
 *.prefs
+/test/*
+/java-pruebas/*
