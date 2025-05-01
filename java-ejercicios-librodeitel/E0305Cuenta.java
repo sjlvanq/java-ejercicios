@@ -1,15 +1,15 @@
 
 //UML:
 /*
-         E0305Cuenta
---------------------------------------------
-«constructor» E0305Cuenta( nombre: String )
--nombre: String
----------------------------------------------
-+establecerNombre ( nombre: String )
-+obtenerNombre(): String
----------------------------------------------
-*/
+   E0305Cuenta
+   --------------------------------------------
+   «constructor» E0305Cuenta( nombre: String )
+   -nombre: String
+   ---------------------------------------------
+   +establecerNombre ( nombre: String )
+   +obtenerNombre(): String
+   ---------------------------------------------
+   */
 
 public class E0305Cuenta {
 	private String nombre;
