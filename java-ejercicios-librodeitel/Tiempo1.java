@@ -11,8 +11,8 @@ public class Tiempo1
 	public void establecerTiempo(int hora, int minuto, int segundo)
 	{
 		// valida la hora, el minuto y el segundo
-		if (hora < 0 || hora >= 24 || minuto < 0 || minuto >= 60) ||
-			segundo < 0 || segundo >= 60)
+		if (hora < 0 || hora >= 24 || minuto < 0 || minuto >= 60 || 
+		segundo < 0 || segundo >= 60)
 			{
 				throw new IllegalArgumentException(
 						"hora, minuto y/o segundo estaban fuera de rango");

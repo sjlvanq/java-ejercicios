@@ -10,7 +10,7 @@ public class ColeccionArrayList
 		elementos.add("rojo"); // adjunta un elemento a la lista
 		elementos.add(0, "amarillo"); // inserta "amarillo" en el índice 0
 		// encabezado
-		System.out.print(
+		System.out.printf(
 				"Mostrar contenido de lista con ciclo controlado por contador:");
 		// muestra los colores en la lista
 		for (int i = 0; i < elementos.size(); i++)

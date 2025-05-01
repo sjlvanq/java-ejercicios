@@ -6,19 +6,17 @@ public class PasoArreglo
 	public static void main(String[] args)
 	{
 		int[] arreglo = { 1, 2, 3, 4, 5 };
-		System.out.println(
+		System.out.printf(
 				"Efectos de pasar una referencia a un arreglo completo:%n" +
 				"Los valores del arreglo original son:%n");
 		// imprime los elementos originales del arreglo
 		for (int valor : arreglo)
-			System.out.printf("
-					%d", valor);
+			System.out.printf("%d", valor);
 		modificarArreglo(arreglo); // pasa la referencia al arreglo
-		System.out.println("%n%nLos valores del arreglo modificado son:%n");
+		System.out.printf("%n%nLos valores del arreglo modificado son:%n");
 		// imprime los elementos modificados del arreglo
 		for (int valor : arreglo)
-			System.out.printf("
-					%d", valor);
+			System.out.printf("%d", valor);
 		System.out.printf(
 				"%n%nEfectos de pasar el valor de un elemento del arreglo:%n" +
 				"arreglo[3] antes de modificarElemento: %d%n", arreglo[3]);

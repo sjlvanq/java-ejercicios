@@ -14,7 +14,7 @@ public class Alcance
 		usarCampo(); // usarCampo usa el campo x de la clase Alcance
 		usarVariableLocal(); // usarVariableLocal reinicia a la x local
 		usarCampo(); // el campo x de la clase Alcance retiene su valor
-		System.out.printf(%nla x local en main es %d%n", x);
+		System.out.printf("%nla x local en main es %d%n", x);
 	}
 	// crea e inicializa la variable local x durante cada llamada
 	public static void usarVariableLocal()

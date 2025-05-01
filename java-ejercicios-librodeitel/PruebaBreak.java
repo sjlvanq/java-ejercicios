@@ -4,8 +4,7 @@ public class PruebaBreak
 {
 	public static void main(String[] args)
 	{
-		int cuenta; // la variable de control también se usa cuando termina el
-		ciclo
+		int cuenta; // la variable de control también se usa cuando termina el ciclo
 			for (cuenta = 1; cuenta <= 10; cuenta++) // itera 10 veces
 			{
 				if ( cuenta == 5 )

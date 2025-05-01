@@ -21,33 +21,11 @@ public class Comparacion
 			System.out.printf("%d != %d%n", numero1, numero2);
 		if (numero1 < numero2)
 			System.out.printf("%d < %d%n", numero1, numero2);
-
-		Fig. 2.15 冷 Comparación de enteros mediante instrucciones if, operadores de igualdad y relacionales
-			(parte 1 de 2).
-
-			M02_DEITEL_COMO-PROGRAMAR-EN-JAVA_SE_10ED_C2_034-068_3802-1.indd 55
-
-			5/4/16 11:27 AM
-
-			56
-
-			Capítulo 2 Introducción a las aplicaciones en Java: entrada/salida y operadores
-
-			31
-			32
-			if (numero1 > numero2)
-				33
-					System.out.printf("%d > %d%n", numero1, numero2);
-		34
-			35
-			if (numero1 <= numero2)
-				36
-					System.out.printf("%d <= %d%n", numero1, numero2);
-		37
-			38
-			if (numero1 >= numero2)
-				39
-					System.out.printf("%d >= %d%n", numero1, numero2);
-		40
+		if (numero1 > numero2)
+			System.out.printf("%d > %d%n", numero1, numero2);
+		if (numero1 <= numero2)
+			System.out.printf("%d <= %d%n", numero1, numero2);
+		if (numero1 >= numero2)
+			System.out.printf("%d >= %d%n", numero1, numero2);
 	} // fin del método main
-	41 } // fin de la clase Comparacion
+} // fin de la clase Comparacion

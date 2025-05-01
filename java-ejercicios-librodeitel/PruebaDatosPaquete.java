@@ -15,6 +15,7 @@ public class PruebaDatosPaquete
 		System.out.printf("%nDespues de modificar valores:%n%s%n", datosPaquete);
 	}
 } // fin de la clase PruebaDatosPaquete
+
 // clase con variables de instancia con acceso a nivel de paquete
 class DatosPaquete
 {

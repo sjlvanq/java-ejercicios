@@ -10,7 +10,7 @@ public class PruebaContinue
 				continue; // omite el resto del código en el ciclo si cuenta es 5
 			System.out.printf("%d ", cuenta);
 		}
-		System.out.println("%nSe uso continue para omitir imprimir 5%n");
+		System.out.printf("%nSe uso continue para omitir imprimir 5%n");
 	} // fin de main
 } // fin de la clase PruebaContinue
 

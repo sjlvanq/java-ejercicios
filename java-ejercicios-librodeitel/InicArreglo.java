@@ -1,6 +1,5 @@
 // Fig. 7.2: InicArreglo.java
-// Inicialización de los elementos de un arreglo con valores predeterminados de
-cero.
+// Inicialización de los elementos de un arreglo con valores predeterminados de cero.
 public class InicArreglo
 {
 	public static void main(String[] args)

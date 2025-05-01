@@ -23,15 +23,13 @@ public class PruebaTiempo1
 			System.out.printf("Excepcion: %s%n%n", e.getMessage());
 		}
 		// muestra el tiempo después de tratar de establecer valores inválidos
-		mostrarTiempo("Despues de llamar a establecerTiempo con valores
-				invalidos", tiempo);
-		// muestra un objeto Tiempo1 en formatos de 24 horas y 12 horas
-		private static void mostrarTiempo(String encabezado, Tiempo1 t)
-		{
-			System.out.printf("%s%nTiempo universal: %s%nTiempo estandar: %s%n",
-					encabezado, t.aStringUniversal()
-					t.aStringUniversal(), t.toString()
-					t.toString());
-		}
-	} // fin de la clase PruebaTiempo1
+		mostrarTiempo("Despues de llamar a establecerTiempo con valores invalidos", tiempo);
+	}
+	// muestra un objeto Tiempo1 en formatos de 24 horas y 12 horas
+	private static void mostrarTiempo(String encabezado, Tiempo1 t)
+	{
+		System.out.printf("%s%nTiempo universal: %s%nTiempo estandar: %s%n",
+				encabezado, t.aStringUniversal(), t.toString());
+	}
+} // fin de la clase PruebaTiempo1
 

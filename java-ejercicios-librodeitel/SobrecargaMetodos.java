@@ -5,10 +5,8 @@ public class SobrecargaMetodos
 	// prueba los métodos cuadrado sobrecargados
 	public static void main(String[] args)
 	{
-		System.out.printf("El cuadrado del entero 7 es %d%n", cuadrado(7)
-				cuadrado(7));
-		System.out.printf("El cuadrado del double 7.5 es %f%n", cuadrado(7.5)
-				cuadrado(7.5));
+		System.out.printf("El cuadrado del entero 7 es %d%n", cuadrado(7));
+		System.out.printf("El cuadrado del double 7.5 es %f%n", cuadrado(7.5));
 	}
 	// método cuadrado con argumento int
 	public static int cuadrado(int valorInt)

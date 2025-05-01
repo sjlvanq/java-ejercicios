@@ -3,9 +3,8 @@
 import java.security.SecureRandom;
 public class Craps
 {
-	// crea un generador de números aleatorios seguros para usarlo en el método
-	tirarDado
-		private static final SecureRandom numerosAleatorios = new SecureRandom();
+	// crea un generador de números aleatorios seguros para usarlo en el método tirarDado
+	private static final SecureRandom numerosAleatorios = new SecureRandom();
 	// enumeración con constantes que representan el estado del juego
 	private enum Estado {CONTINUA, GANO, PERDIO};
 	// constantes que representan tiros comunes del dado
@@ -51,22 +50,21 @@ public class Craps
 		}
 		// muestra mensaje de que ganó o perdió
 		if (estadoJuego == Estado.GANO)
-			"El jugador gana");
+			System.out.println("El jugador gana");
 		else
 			System.out.println("El jugador pierde");
 	}
 	// tira los dados, calcula la suma y muestra los resultados
 	public static int tirarDados()
-		)
-		{
-			// elige valores aleatorios para los dados
-			int dado1 = 1 + numerosAleatorios.nextInt(6); // primer tiro del dado
-			int dado2 = 1 + numerosAleatorios.nextInt(6); // segundo tiro del dado
-			int suma = dado1 + dado2; // suma de los valores de los dados
-			// muestra los resultados de este tiro
-			System.out.printf("El jugador tiro %d + %d = %d%n",
-					dado1, dado2, suma);
-			return suma;
-		}
+	{
+		// elige valores aleatorios para los dados
+		int dado1 = 1 + numerosAleatorios.nextInt(6); // primer tiro del dado
+		int dado2 = 1 + numerosAleatorios.nextInt(6); // segundo tiro del dado
+		int suma = dado1 + dado2; // suma de los valores de los dados
+		// muestra los resultados de este tiro
+		System.out.printf("El jugador tiro %d + %d = %d%n",
+				dado1, dado2, suma);
+		return suma;
+	}
 } // fin de la clase Craps
 

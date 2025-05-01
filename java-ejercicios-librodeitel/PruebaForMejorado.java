@@ -1,6 +1,5 @@
 // Fig. 7.12: PruebaForMejorado.java
-// Uso de la instrucción for mejorada para sumar el total de enteros en un
-arreglo.
+// Uso de la instrucción for mejorada para sumar el total de enteros en un arreglo.
 public class PruebaForMejorado
 {
 	public static void main(String[] args)

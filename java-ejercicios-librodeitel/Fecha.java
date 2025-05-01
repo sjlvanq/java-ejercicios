@@ -33,7 +33,7 @@ public class Fecha
 	// devuelve un objeto String de la forma mes/dia/anio
 	public String toString()
 	{
-		return String.format("%d/%d/%d", mes, dia, anio);
+		return String.format("%d/%d/%d", this.mes, this.dia, this.anio);
 	}
 } // fin de la clase Fecha
 

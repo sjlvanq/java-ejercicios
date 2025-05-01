@@ -9,14 +9,12 @@ public class PromedioClase
 		Scanner entrada = new Scanner(System.in);
 		// fase de inicialización
 		int total = 0; // inicializa la suma de calificaciones introducidas por el usuario
-		int contadorCalificaciones = 1; // inicializa # de calificación a
-		introducir a continuación
+		int contadorCalificaciones = 1; // inicializa # de calificación a introducir a continuación
 			// la fase de procesamiento usa la repetición controlada por contador
 			while (contadorCalificaciones <= 10) // itera 10 veces
 			{
 				System.out.print("Escriba la calificacion: "); // indicador
-				int calificacion = entrada.nextInt(); // recibe siguiente calificación
-				de entrada
+				int calificacion = entrada.nextInt(); // recibe siguiente calificación de entrada
 					total = total + calificacion; // suma calificación al total
 				contadorCalificaciones = contadorCalificaciones + 1; // incrementa el contador en 1"
 			}

@@ -4,22 +4,11 @@ import java.awt.Color;
 import java.awt.Graphics;
 public class MiLinea
 {
-	private
-		private
-		private
-		private
-		private
-
-		int x1; // coordenada x del
-	int y1; // coordenada y del
-	int x2; // coordenada x del
-	int y2; // coordenada y del
-	Color color; // el color de
-	primer punto final
-		primer punto final
-		segundo punto final
-		segundo punto final
-		esta figura
+	private int x1; // coordenada x del primer punto final
+	private int y1; // coordenada y del segundo punto final
+	private int x2; // coordenada x del tercer punto final
+	private int y2; // coordenada y del cuarto punto final
+	Color color; // el color de esta figura
 
 		// constructor con valores de entrada
 		public MiLinea(int x1, int y1, int x2, int y2, Color color)

@@ -1,7 +1,7 @@
 // Fig. 8.14: PruebaStaticImport.java
 // Uso de importación static para importar métodos de la clase Math.
 import static java.lang.Math.*;
-public class PruebaImportStatic
+public class PruebaStaticImport
 {
 	public static void main(String[] args)
 	{

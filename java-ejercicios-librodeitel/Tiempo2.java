@@ -2,8 +2,7 @@
 // Declaración de la clase Tiempo2 con constructores sobrecargados.
 public class Tiempo2
 {
-	private int hora;
-	// 0 - 23
+	private int hora; // 0 - 23
 	private int minuto; // 0 - 59
 	private int segundo; // 0 - 59
 	// Constructor de Tiempo2 sin argumentos:
@@ -12,18 +11,16 @@ public class Tiempo2
 	{
 		this(0, 0, 0); // invoca al constructor de Tiempo2 con tres argumentos
 	}
-	// Constructor de Tiempo2: se suministra hora, minuto y segundo con valor
-	predeterminado de 0
-		public Tiempo2(int hora)
-		{
-			this(hora, 0, 0); // invoca al constructor con tres argumentos
-		}
-	// Constructor de Tiempo2: se suministran hora y minuto, segundo con valor
-	predeterminado de 0
-		public Tiempo2(int hora, int minuto)
-		{
-			this(hora, minuto, 0); // invoca al constructor con tres argumentos
-		}
+	// Constructor de Tiempo2: se suministra hora, minuto y segundo con valor predeterminado de 0
+	public Tiempo2(int hora)
+	{
+		this(hora, 0, 0); // invoca al constructor con tres argumentos
+	}
+	// Constructor de Tiempo2: se suministran hora y minuto, segundo con valor predeterminado de 0
+	public Tiempo2(int hora, int minuto)
+	{
+		this(hora, minuto, 0); // invoca al constructor con tres argumentos
+	}
 	// Constructor de Tiempo2: se suministran hora, minuto y segundo
 	public Tiempo2(int hora, int minuto, int segundo)
 	{
@@ -58,17 +55,12 @@ public class Tiempo2
 		this.minuto = minuto;
 		this.segundo = segundo;
 	}
-	// valida y
-	public void
+	// valida y establece la hora
+	public void establecerHora(int hora)
 	{
-		if (hora
-				throw
-
-				establece la hora
-				establecerHora(int hora)
-				< 0 || hora >= 24)
-			new IllegalArgumentException ("hora debe estar entre 0 y 23");
-
+		if (hora < 0 || hora >=24)
+				throw new IllegalArgumentException ("hora debe estar entre 0 y 23");
+		
 		this.hora = hora;
 	}
 	// valida y establece el minuto
@@ -85,18 +77,12 @@ public class Tiempo2
 			throw new IllegalArgumentException("segundo debe estar entre 0 y 59");
 		this.segundo = segundo;
 	}
-	// Métodos
-	// obtiene
-	public int
+	// Métodos Obtener
+	// obtiene el valor de la hora
+	public int obtenerHora()
 	{
-		return
+		return hora;
 	}
-
-	Obtener
-		el valor de la hora
-		obtenerHora()
-		hora;
-
 	// obtiene el valor del minuto
 	public int obtenerMinuto()
 	{

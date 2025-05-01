@@ -1,11 +1,9 @@
 // Fig. 7.14: LibroCalificaciones.java
-// Libro de calificaciones que utiliza un arreglo para almacenar las
-calificaciones de una prueba.
+// Libro de calificaciones que utiliza un arreglo para almacenar las calificaciones de una prueba.
 public class LibroCalificaciones
 {
-	private String nombreDelCurso; // nombre del curso que representa este
-	LibroCalificaciones
-		private int[] calificaciones; // arreglo de calificaciones de estudiantes
+	private String nombreDelCurso; // nombre del curso que representa este LibroCalificaciones
+	private int[] calificaciones; // arreglo de calificaciones de estudiantes
 	// constructor
 	public LibroCalificaciones(String nombreDelCurso, int[] calificaciones)
 	{
@@ -28,14 +26,10 @@ public class LibroCalificaciones
 		// imprime el arreglo calificaciones en pantalla
 		imprimirCalificaciones();
 		// llama al método obtenerPromedio para calcular la calificación promedio
-		System.out.printf("%nEl promedio de la clase es %.2f%n", obtenerPromedio()
-				obtenerPromedio());
+		System.out.printf("%nEl promedio de la clase es %.2f%n", obtenerPromedio());
 		// llama a los métodos obtenerMinima y obtenerMaxima
-		System.out.printf("La calificacion mas baja es %d%nLa calificacion mas
-				alta es %d%n%n",
-				obtenerMinima()
-				obtenerMinima(), obtenerMaxima()
-				obtenerMaxima());
+		System.out.printf("La calificacion mas baja es %d%nLa calificacion mas alta es %d%n%n",
+				obtenerMinima(), obtenerMaxima());
 		// llama a imprimirGraficoBarras para imprimir el gráfico de distribución de calificaciones
 		imprimirGraficoBarras();
 	}
@@ -55,15 +49,14 @@ public class LibroCalificaciones
 	// busca la calificación más alta
 	public int obtenerMaxima()
 	{
-		int califAlta = calificaciones[0]; // asume que calificaciones[0] es la
-		más alta
-			// itera a través del arreglo de calificaciones
-			for (int calificacion : calificaciones)
-			{
-				// si calificacion es mayor que califAlta, se asigna a califAlta
-				if (calificacion > califAlta)
-					califAlta = calificacion; // nueva calificación más alta
-			}
+		int califAlta = calificaciones[0]; // asume que calificaciones[0] es la más alta
+		// itera a través del arreglo de calificaciones
+		for (int calificacion : calificaciones)
+		{
+			// si calificacion es mayor que califAlta, se asigna a califAlta
+			if (calificacion > califAlta)
+				califAlta = calificacion; // nueva calificación más alta
+		}
 		return califAlta;
 	}
 	// determina la calificación promedio de la prueba
@@ -74,15 +67,13 @@ public class LibroCalificaciones
 		for (int calificacion : calificaciones)
 			total += calificacion;
 		// devuelve el promedio de las calificaciones
-		return (double) total / calificaciones.length
-			calificaciones.length;
+		return (double) total / calificaciones.length;
 	}
 	// imprime grafico de barras que muestra la distribución de las calificaciones
 	public void imprimirGraficoBarras()
 	{
 		System.out.println("Distribucion de calificaciones:");
-		// almacena la frecuencia de las calificaciones en cada rango de 10
-		calificaciones
+		// almacena la frecuencia de las calificaciones en cada rango de 10 calificaciones
 			int[] frecuencia = new int[11];
 		// para cada calificación, incrementa la frecuencia apropiada
 		for (int calificacion : calificaciones)

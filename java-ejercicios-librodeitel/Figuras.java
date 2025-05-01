@@ -10,8 +10,7 @@ public class Figuras extends JPanel
 	{
 		opcion = opcionUsuario;
 	}
-	// dibuja una cascada de figuras, empezando desde la esquina superior
-	izquierda
+	// dibuja una cascada de figuras, empezando desde la esquina superior izquierda
 		public void paintComponent(Graphics g)
 		{
 			super.paintComponent(g);

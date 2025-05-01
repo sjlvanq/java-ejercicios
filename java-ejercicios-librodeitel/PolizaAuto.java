@@ -47,8 +47,7 @@ public class PolizaAuto
 	{
 		boolean estadoSinCulpa;
 		// determina si el estado tiene seguro de auto sin culpa
-		switch (obtenerEstado()) // obtiene la abreviación del estado del objeto
-			PolizaAuto
+		switch (obtenerEstado()) // obtiene la abreviación del estado del objeto PolizaAuto
 			{
 				case "MA": case "NJ": case "NY": case "PA":
 					estadoSinCulpa = true;

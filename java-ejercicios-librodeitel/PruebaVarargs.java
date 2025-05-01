@@ -9,8 +9,7 @@ public class PruebaVarargs
 		// calcula el total usando la instrucción for mejorada
 		for (double d : numeros)
 			total += d;
-		return total / numeros.length
-			numeros.length;
+		return total / numeros.length;
 	}
 	public static void main(String[] args)
 	{

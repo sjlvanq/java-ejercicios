@@ -1,6 +1,6 @@
 // Fig. 7.10: PaqueteDeCartas.java
 // La clase PaqueteDeCartas representa un paquete de cartas de juego.
-import java.util.SecureRandom;
+import java.security.SecureRandom;
 public class PaqueteDeCartas
 {
 	private Carta[] paquete; // arreglo de objetos Carta
@@ -24,32 +24,27 @@ public class PaqueteDeCartas
 	// baraja el paquete de Cartas con algoritmo de una pasada
 	public void barajar()
 	{
-		// la siguiente llamada al método repartirCarta debe empezar en paquete[0]
-		otra vez
-			cartaActual = 0;
-		// para cada Carta, selecciona otra Carta aleatoria (0 a 51) y las
-		intercambia
-			for (int primera = 0; primera < paquete.length; primera++)
-			{
-				// selecciona un número aleatorio entre 0 y 51
-				int segunda = numerosAleatorios.nextInt(NUMERO_DE_CARTAS);
-				// intercambia Carta actual con la Carta seleccionada al azar
-				Carta temp = paquete[primera];
-				paquete[primera] = paquete[segunda];
-				paquete[segunda] = temp;
-			}
+		// la siguiente llamada al método repartirCarta debe empezar en paquete[0] otra vez
+		cartaActual = 0;
+		// para cada Carta, selecciona otra Carta aleatoria (0 a 51) y las intercambia
+		for (int primera = 0; primera < paquete.length; primera++)
+		{
+			// selecciona un número aleatorio entre 0 y 51
+			int segunda = numerosAleatorios.nextInt(NUMERO_DE_CARTAS);
+			// intercambia Carta actual con la Carta seleccionada al azar
+			Carta temp = paquete[primera];
+			paquete[primera] = paquete[segunda];
+			paquete[segunda] = temp;
+		}
 	}
 	// reparte una Carta
 	public Carta repartirCarta()
 	{
 		// determina si quedan Cartas por repartir
-		if (cartaActual
-				cartaActual < paquete.length
-				paquete.length)
+		if (cartaActual < paquete.length)
 			return paquete[cartaActual++]; // devuelve la Carta actual en el arreglo
 		else
-			return null; // devuelve null para indicar que se repartieron todas las
-		Cartas
+			return null; // devuelve null para indicar que se repartieron todas las Cartas
 	}
 } // fin de la clase PaqueteDeCartas
 

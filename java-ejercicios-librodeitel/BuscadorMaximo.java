@@ -17,9 +17,7 @@ public class BuscadorMaximo
 		// determina el valor máximo
 		double resultado = maximo(numero1, numero2, numero3);
 		// muestra el valor máximo
-		System.out.println(
-				("El maximo es: " + resultado
-				 o);
+		System.out.println("El maximo es: " + resultado);
 	}
 	// devuelve el máximo de sus tres parámetros double
 	public static double maximo(double x, double y, double z)

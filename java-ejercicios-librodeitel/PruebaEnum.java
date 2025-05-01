@@ -7,20 +7,14 @@ public class PruebaEnum
 	{
 		System.out.println("Todos los libros:");
 		// imprime todos los libros en enum Libro
-		for (Libro libro : Libro.values()
-				Libro.values())
+		for (Libro libro : Libro.values())
 			System.out.printf("%-10s%-45s%s%n", libro,
-					libro.obtenerTitulo()
-					libro.obtenerTitulo(), libro.obtenerAnioCopyright()
-					libro.obtenerAnioCopyright());
+					libro.obtenerTitulo(), libro.obtenerAnioCopyright());
 		System.out.println("%nMostrar un rango de constantes enum:%n");
 		// imprime los primeros cuatro libros
-		for (Libro libro : EnumSet.range(Libro.JHTP, Libro.CPPHTP)
-				Libro.CPPHTP))
+		for (Libro libro : EnumSet.range(Libro.JHTP, Libro.CPPHTP))
 					System.out.printf("%-10s%-45s%s%n", libro,
-							libro.obtenerTitulo()
-							libro.obtenerTitulo(), libro.obtenerAnioCopyright()
-							libro.obtenerAnioCopyright());
+							libro.obtenerTitulo(), libro.obtenerAnioCopyright());
 	}
 } // fin de la clase PruebaEnum
 
