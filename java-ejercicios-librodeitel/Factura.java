@@ -11,10 +11,10 @@ public class Factura implements PorPagar
 			double precioPorArticulo)
 	{
 		if (cantidad < 0) // valida la cantidad
-			throw new IllegalArgumentException (“Cantidad debe ser >= 0”);
+			throw new IllegalArgumentException ("Cantidad debe ser >= 0");
 		if (precioPorArticulo < 0.0) // valida el precioPorArticulo
 			throw new IllegalArgumentException(
-					“El precio por articulo debe ser >= 0”);
+					"El precio por articulo debe ser >= 0");
 		this.cantidad = cantidad;
 		this.numeroPieza = numeroPieza;
 		this.descripcionPieza = descripcionPieza;
@@ -34,7 +34,7 @@ public class Factura implements PorPagar
 	public void establecerCantidad(int cantidad)
 	{
 		if (cantidad < 0) // valida la cantidad
-			throw new IllegalArgumentException (“Cantidad debe ser >= 0”);
+			throw new IllegalArgumentException ("Cantidad debe ser >= 0");
 		this.cantidad = cantidad;
 	}
 	// obtener cantidad
@@ -47,7 +47,7 @@ public class Factura implements PorPagar
 	{
 		if (precioPorArticulo < 0.0) // valida el precioPorArticulo
 			throw new IllegalArgumentException(
-					“El precio por articulo debe ser >= 0”);
+					"El precio por articulo debe ser >= 0");
 		this.precioPorArtculo = precioPorArticulo;
 	}
 	// obtiene el precio por artículo
@@ -59,10 +59,10 @@ public class Factura implements PorPagar
 	@Override
 	public String toString()
 	{
-		return String.format(“%s: %n%s: %s (%s) %n%s: %d %n%s: $%,.2f”,
-				“factura”, “numero de pieza”, obtenerNumeroPieza(),
+		return String.format("%s: %n%s: %s (%s) %n%s: %d %n%s: $%,.2f",
+				"factura", "numero de pieza", obtenerNumeroPieza(),
 				obtenerDescripcionPieza(),
-				“cantidad”, obtenerCantidad(), “precio por articulo”, obtenerPrecioPorArticulo());
+				"cantidad", obtenerCantidad(), "precio por articulo", obtenerPrecioPorArticulo());
 		// método requerido para realizar el contrato con la interfaz PorPagar
 		@Override
 		public double obtenerMontoPago()

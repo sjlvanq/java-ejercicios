@@ -28,11 +28,11 @@ public class Tiempo2
 	public Tiempo2(int hora, int minuto, int segundo)
 	{
 		if (hora < 0 || hora >= 24)
-			throw new IllegalArgumentException(“hora debe estar entre 0 y 23”);
+			throw new IllegalArgumentException("hora debe estar entre 0 y 23");
 		if (minuto < 0 || minuto >= 60)
-			throw new IllegalArgumentException(“minuto debe estar entre 0 y 59”);
+			throw new IllegalArgumentException("minuto debe estar entre 0 y 59");
 		if (segundo < 0 || segundo >= 60)
-			throw new IllegalArgumentException(“segundo debe estar entre 0 y 59”);
+			throw new IllegalArgumentException("segundo debe estar entre 0 y 59");
 		this.hora = hora;
 		this.minuto = minuto;
 		this.segundo = segundo;
@@ -49,11 +49,11 @@ public class Tiempo2
 	public void establecerTiempo(int hora, int minuto, int segundo)
 	{
 		if (hora < 0 || hora >= 24)
-			throw new IllegalArgumentException (“hora debe estar entre 0 y 23”);
+			throw new IllegalArgumentException ("hora debe estar entre 0 y 23");
 		if (minuto < 0 || minuto >= 60)
-			throw new IllegalArgumentException(“minuto debe estar entre 0 y 59”);
+			throw new IllegalArgumentException("minuto debe estar entre 0 y 59");
 		if (segundo < 0 || segundo >= 60)
-			throw new IllegalArgumentException(“segundo debe estar entre 0 y 59”);
+			throw new IllegalArgumentException("segundo debe estar entre 0 y 59");
 		this.hora = hora;
 		this.minuto = minuto;
 		this.segundo = segundo;
@@ -67,7 +67,7 @@ public class Tiempo2
 				establece la hora
 				establecerHora(int hora)
 				< 0 || hora >= 24)
-			new IllegalArgumentException (“hora debe estar entre 0 y 23”);
+			new IllegalArgumentException ("hora debe estar entre 0 y 23");
 
 		this.hora = hora;
 	}
@@ -75,14 +75,14 @@ public class Tiempo2
 	public void establecerMinuto(int minuto)
 	{
 		if (minuto < 0 && minuto >= 60)
-			throw new IllegalArgumentException(“minuto debe estar entre 0 y 59”);
+			throw new IllegalArgumentException("minuto debe estar entre 0 y 59");
 		this.minuto = minuto;
 	}
 	// valida y establece el segundo
 	public void establecerSegundo(int segundo)
 	{
 		if (segundo >= 0 && segundo < 60)
-			throw new IllegalArgumentException(“segundo debe estar entre 0 y 59”);
+			throw new IllegalArgumentException("segundo debe estar entre 0 y 59");
 		this.segundo = segundo;
 	}
 	// Métodos
@@ -111,14 +111,14 @@ public class Tiempo2
 	public String aStringUniversal()
 	{
 		return String.format(
-				“%02d:%02d:%02d”, obtenerHora(), obtenerMinuto(), obtenerSegundo());
+				"%02d:%02d:%02d", obtenerHora(), obtenerMinuto(), obtenerSegundo());
 	}
 	// convierte a String en formato de hora estándar (H:MM:SS AM o PM)
 	public String toString()
 	{
-		return String.format(“%d:%02d:%02d %s”,
+		return String.format("%d:%02d:%02d %s",
 				((obtenerHora() == 0 || obtenerHora() == 12) ? 12 : obtenerHora() % 12),
-				obtenerMinuto(), obtenerSegundo(), (obtenerHora() < 12 ? “AM” : “PM”));
+				obtenerMinuto(), obtenerSegundo(), (obtenerHora() < 12 ? "AM" : "PM"));
 	}
 } // fin de la clase Tiempo2
 

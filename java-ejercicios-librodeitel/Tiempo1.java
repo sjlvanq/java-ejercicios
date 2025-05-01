@@ -15,7 +15,7 @@ public class Tiempo1
 			segundo < 0 || segundo >= 60)
 			{
 				throw new IllegalArgumentException(
-						“hora, minuto y/o segundo estaban fuera de rango”);
+						"hora, minuto y/o segundo estaban fuera de rango");
 			}
 		this.hora = hora;
 		this.minuto = minuto;
@@ -24,14 +24,14 @@ public class Tiempo1
 	// convierte a objeto String en formato de hora universal (HH:MM:SS)
 	public String aStringUniversal()
 	{
-		return String.format(“%02d:%02d:%02d”, hora, minuto, segundo);
+		return String.format("%02d:%02d:%02d", hora, minuto, segundo);
 	}
 	// convierte a objeto String en formato de hora estándar (H:MM:SS AM o PM)
 	public String toString()
 	{
-		return String.format(“%d:%02d:%02d %s”,
+		return String.format("%d:%02d:%02d %s",
 				((hora == 0 || hora == 12) ? 12 : hora % 12),
-				minuto, segundo, (hora < 12 ? “AM” : “PM”));
+				minuto, segundo, (hora < 12 ? "AM" : "PM"));
 	}
 } // fin de la clase Tiempo1
 

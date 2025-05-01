@@ -1,5 +1,5 @@
 // Fig. 6.8: Craps.java
-// La clase Craps simula el juego de dados “craps”.
+// La clase Craps simula el juego de dados "craps".
 import java.security.SecureRandom;
 public class Craps
 {
@@ -35,7 +35,7 @@ public class Craps
 			default: // no ganó ni perdió, por lo que guarda el punto
 				estadoJuego = Estado.CONTINUA; // no ha terminado el juego
 				miPunto = sumaDeDados; // guarda el punto
-				System.out.printf(“El punto es %d%n”, miPunto);
+				System.out.printf("El punto es %d%n", miPunto);
 				break;
 		}
 		// mientras el juego no esté terminado
@@ -51,9 +51,9 @@ public class Craps
 		}
 		// muestra mensaje de que ganó o perdió
 		if (estadoJuego == Estado.GANO)
-			“El jugador gana”);
+			"El jugador gana");
 		else
-			System.out.println(“El jugador pierde”);
+			System.out.println("El jugador pierde");
 	}
 	// tira los dados, calcula la suma y muestra los resultados
 	public static int tirarDados()
@@ -64,7 +64,7 @@ public class Craps
 			int dado2 = 1 + numerosAleatorios.nextInt(6); // segundo tiro del dado
 			int suma = dado1 + dado2; // suma de los valores de los dados
 			// muestra los resultados de este tiro
-			System.out.printf(“El jugador tiro %d + %d = %d%n”,
+			System.out.printf("El jugador tiro %d + %d = %d%n",
 					dado1, dado2, suma);
 			return suma;
 		}

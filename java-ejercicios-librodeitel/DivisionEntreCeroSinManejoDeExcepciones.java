@@ -11,13 +11,13 @@ public class DivisionEntreCeroSinManejoDeExcepciones
 	public static void main(String[] args)
 	{
 		Scanner explorador = new Scanner(System.in);
-		System.out.print(“Introduzca un numerador entero: ”);
+		System.out.print("Introduzca un numerador entero: ");
 		int numerador = explorador.nextInt();
-		System.out.print(“Introduzca un denominador entero: ”);
+		System.out.print("Introduzca un denominador entero: ");
 		int denominador = explorador.nextInt();
 		int resultado = cociente(numerador, denominador);
 		System.out.printf(
-				“%nResultado: %d / %d = %d%n”, numerador, denominador, resultado);
+				"%nResultado: %d / %d = %d%n", numerador, denominador, resultado);
 	}
 } // fin de la clase DivisionEntreCeroSinManejoDeExcepciones
 

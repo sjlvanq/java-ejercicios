@@ -7,7 +7,7 @@ public class PruebaDoWhile
 		int contador = 1;
 		do
 		{
-			System.out.printf(“%d ”, contador);
+			System.out.printf("%d ", contador);
 			++contador;
 		} while (contador <= 10); // fin de do...while
 		System.out.println();

@@ -50,7 +50,7 @@ M04_DEITEL_COMO-PROGRAMAR-EN-JAVA_SE_10ED_C4_101-151_3802-1.indd 122
 
 				// fase de procesamiento
 				// pide entrada y lee calificación del usuario
-				System.out.print(“Escriba la calificacion o -1 para terminar: “);
+				System.out.print("Escriba la calificacion o -1 para terminar: ");
 			int calificacion = entrada.nextInt();
 			// itera hasta recibir el valor centinela del usuario
 			while (calificacion != -1)
@@ -86,7 +86,7 @@ M04_DEITEL_COMO-PROGRAMAR-EN-JAVA_SE_10ED_C4_101-151_3802-1.indd 122
 					7
 
 					// pide entrada y lee la siguiente calificación del usuario
-					System.out.print(“Escriba la calificacion o -1 para terminar: “);
+					System.out.print("Escriba la calificacion o -1 para terminar: ");
 				calificacion = entrada.nextInt();
 				{
 					// fase de terminación
@@ -96,12 +96,12 @@ M04_DEITEL_COMO-PROGRAMAR-EN-JAVA_SE_10ED_C4_101-151_3802-1.indd 122
 						// usa número con punto decimal para calcular promedio de calificaciones
 						double promedio = (double) total / contadorCalificaciones;
 						// muestra total y promedio (con dos dígitos de precisión)
-						System.out.printf(“%nEl total de las %d calificaciones introducidas es %d%n”,
+						System.out.printf("%nEl total de las %d calificaciones introducidas es %d%n",
 								contadorCalificaciones, total);
-						System.out.printf(“El promedio de la clase es %.2f%n”, promedio);
+						System.out.printf("El promedio de la clase es %.2f%n", promedio);
 					}
 					else // no se introdujeron calificaciones, por lo que se muestra el mensaje
 						apropiado
-							System.out.println(“No se introdujeron calificaciones”);
+							System.out.println("No se introdujeron calificaciones");
 				}
 			} // fin de la clase PromedioClase

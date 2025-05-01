@@ -11,7 +11,7 @@ public class PruebaPaqueteDeCartas
 		for (int i = 1; i <= 52; i++)
 		{
 			// reparte e imprime una Carta
-			System.out.printf(“%-19s”, miPaqueteDeCartas.repartirCarta());
+			System.out.printf("%-19s", miPaqueteDeCartas.repartirCarta());
 			if (i % 4 == 0) // imprime una nueva línea después de cada cuatro cartas
 				System.out.println();
 		}

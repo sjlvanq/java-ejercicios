@@ -10,7 +10,7 @@ public class PruebaCuenta
 		// crea un objeto Cuenta y lo asigna a miCuenta
 		Cuenta miCuenta = new Cuenta();
 		// muestra el valor inicial del nombre (null)
-		System.out.printf(“El nombre inicial es: %s%n%n”, miCuenta.obtenerNombre());
+		System.out.printf("El nombre inicial es: %s%n%n", miCuenta.obtenerNombre());
 
 		Fig. 3.2 冷 Creación y manipulación de un objeto Cuenta (parte 1 de 2).
 
@@ -25,7 +25,7 @@ public class PruebaCuenta
 			18
 			// pide y lee el nombre
 			19
-			System.out.println(“Introduzca el nombre:”);
+			System.out.println("Introduzca el nombre:");
 		20
 			String elNombre = entrada.nextLine(); // lee una línea de texto
 		21
@@ -36,7 +36,7 @@ public class PruebaCuenta
 			24
 			// muestra el nombre almacenado en el objeto miCuenta
 			25
-			System.out.printf(“El nombre en el objeto miCuenta es:%n%s%n”,
+			System.out.printf("El nombre en el objeto miCuenta es:%n%s%n",
 					26
 					miCuenta.obtenerNombre());
 		27

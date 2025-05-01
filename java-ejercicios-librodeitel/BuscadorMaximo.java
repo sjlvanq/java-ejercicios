@@ -10,7 +10,7 @@ public class BuscadorMaximo
 		Scanner entrada = new Scanner(System.in);
 		// pide y recibe como entrada tres valores de punto flotante
 		System.out.print(
-				“Escriba tres valores de punto flotante, separados por espacios: ”);
+				"Escriba tres valores de punto flotante, separados por espacios: ");
 		double numero1 = entrada.nextDouble(); // lee el primer valor double
 		double numero2 = entrada.nextDouble(); // lee el segundo valor double
 		double numero3 = entrada.nextDouble(); // lee el tercer valor double
@@ -18,7 +18,7 @@ public class BuscadorMaximo
 		double resultado = maximo(numero1, numero2, numero3);
 		// muestra el valor máximo
 		System.out.println(
-				(“El maximo es: ” + resultado
+				("El maximo es: " + resultado
 				 o);
 	}
 	// devuelve el máximo de sus tres parámetros double

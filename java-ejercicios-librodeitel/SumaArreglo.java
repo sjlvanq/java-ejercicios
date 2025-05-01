@@ -9,7 +9,7 @@ public class SumaArreglo
 		// suma el valor de cada elemento al total
 		for (int contador = 0; contador < arreglo.length; contador++)
 			total += arreglo[contador];
-		System.out.printf(“Total de los elementos del arreglo: %d%n”, total);
+		System.out.printf("Total de los elementos del arreglo: %d%n", total);
 	}
 } // fin de la clase SumaArreglo
 

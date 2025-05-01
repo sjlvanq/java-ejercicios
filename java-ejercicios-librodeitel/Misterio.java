@@ -12,7 +12,7 @@ public class Misterio
 			total += y;
 			++x;
 		}
-		System.out.printf(“El total es %d%n”, total);
+		System.out.printf("El total es %d%n", total);
 	}
 } // fin de la clase Misterio
 

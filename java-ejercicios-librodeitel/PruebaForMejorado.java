@@ -10,7 +10,7 @@ public class PruebaForMejorado
 		// suma el valor de cada elemento al total
 		for (int numero : arreglo)
 			total += numero;
-		System.out.printf(“Total de elementos del arreglo: %d%n”, total);
+		System.out.printf("Total de elementos del arreglo: %d%n", total);
 	}
 } // fin de la clase PruebaForMejorado
 

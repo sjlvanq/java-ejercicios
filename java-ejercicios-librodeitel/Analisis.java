@@ -36,7 +36,7 @@ public class Analisis
 						20
 							// pide al usuario la entrada y obtiene el valor
 							21
-							System.out.print(“Escriba el resultado (1 = aprobado, 2 = reprobado): ”);
+							System.out.print("Escriba el resultado (1 = aprobado, 2 = reprobado): ");
 						22
 							int resultado = entrada.nextInt();
 						23
@@ -83,9 +83,9 @@ public class Analisis
 
 					}
 			// fase de terminación; prepara y muestra los resultados
-			System.out.printf(“Aprobados: %d%nReprobados: %d%n”, aprobados, reprobados);
+			System.out.printf("Aprobados: %d%nReprobados: %d%n", aprobados, reprobados);
 			// determina si más de 8 estudiantes aprobaron
 			if (aprobados > 8)
-				System.out.println( “Bono para el instructor!” );
+				System.out.println( "Bono para el instructor!" );
 		}
 } // fin de la clase Analisis

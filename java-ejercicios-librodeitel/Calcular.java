@@ -11,7 +11,7 @@ public class Calcular
 			suma += x; // suma x a suma
 			++x; // incrementa x
 		}
-		System.out.printf(“La suma es: %d%n”, suma);
+		System.out.printf("La suma es: %d%n", suma);
 	}
 } // fin de la clase Calcular
 

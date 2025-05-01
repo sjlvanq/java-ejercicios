@@ -19,7 +19,7 @@ public class Empleado
 	// convierte Empleado a formato String
 	public String toString()
 	{
-		return String.format(“%s, %s Contratado: %s Cumpleanios: %s”,
+		return String.format("%s, %s Contratado: %s Cumpleanios: %s",
 				apellido, nombre, fechaContratacion, fechaNacimiento);
 	}
 } // fin de la clase Empleado

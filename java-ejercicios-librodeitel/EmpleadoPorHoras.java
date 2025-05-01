@@ -11,10 +11,10 @@ public class EmpleadoPorHoras extends Empleado
 		super(primerNombre, apellidoPaterno, numeroSeguroSocial);
 		if (sueldo < 0.0) // valida sueldo
 			throw new IllegalArgumentException(
-					“El sueldo por horas debe ser >= 0.0”);
+					"El sueldo por horas debe ser >= 0.0");
 		if ((horas < 0.0) || (horas > 168.0)) // valida horas
 			throw new IllegalArgumentException(
-					“Las horas trabajadas deben ser >= 0.0 y <= 168.0”);
+					"Las horas trabajadas deben ser >= 0.0 y <= 168.0");
 		this.sueldo = sueldo;
 		this.horas = horas;
 	}
@@ -23,7 +23,7 @@ public class EmpleadoPorHoras extends Empleado
 	{
 		if (sueldo < 0.0) // valida sueldo
 			throw new IllegalArgumentException(
-					“El sueldo por horas debe ser >= 0.0”);
+					"El sueldo por horas debe ser >= 0.0");
 		this.sueldo = sueldo;
 	}
 	// devuelve el sueldo
@@ -36,7 +36,7 @@ public class EmpleadoPorHoras extends Empleado
 	{
 		if ((horas < 0.0) || (horas > 168.0)) // valida horas
 			throw new IllegalArgumentException(
-					“Las horas trabajadas deben ser >= 0.0 y <= 168.0”);
+					"Las horas trabajadas deben ser >= 0.0 y <= 168.0");
 		this.horas = horas;
 	}
 	// devuelve las horas trabajadas
@@ -57,9 +57,9 @@ public class EmpleadoPorHoras extends Empleado
 	@Override
 	public String toString()
 	{
-		return String.format(“empleado por horas: %s%n%s: $%,.2f; %s: %,.2f”,
-				super.toString(), “sueldo por hora”, obtenerSueldo(),
-				“horas trabajadas”, obtenerHoras());
+		return String.format("empleado por horas: %s%n%s: $%,.2f; %s: %,.2f",
+				super.toString(), "sueldo por hora", obtenerSueldo(),
+				"horas trabajadas", obtenerHoras());
 	}
 } // fin de la clase EmpleadoPorHoras
 

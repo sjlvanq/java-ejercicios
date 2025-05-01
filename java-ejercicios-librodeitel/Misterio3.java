@@ -9,7 +9,7 @@ public class Misterio3
 			int columna = 1;
 			while (columna <= 10)
 			{
-				System.out.print(fila % 2 == 1 ? “<” : “>”);
+				System.out.print(fila % 2 == 1 ? "<" : ">");
 				++columna;
 			}
 			--fila;

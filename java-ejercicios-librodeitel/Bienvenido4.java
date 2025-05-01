@@ -5,7 +5,7 @@ public class Bienvenido4
 	// el método main empieza la ejecución de la aplicación de Java
 	public static void main(String[] args)
 	{
-		System.out.printf(“%s%n%s%n”,
-				“Bienvenido a”, “la programacion en Java!”);
+		System.out.printf("%s%n%s%n",
+				"Bienvenido a", "la programacion en Java!");
 	} // fin del método main
 } // fin de la clase Bienvenido4

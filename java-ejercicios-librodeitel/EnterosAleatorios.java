@@ -12,8 +12,8 @@ public class EnterosAleatorios
 		{
 			// elige entero aleatorio del 1 al 6
 			int cara = 1 + numerosAleatorios.nextInt(6);
-			System.out.printf(“%d
-					”, cara); // muestra el valor generado
+			System.out.printf("%d
+					", cara); // muestra el valor generado
 			// si contador es divisible entre 5, empieza una nueva línea de salida
 			if (contador % 5 == 0)
 				System.out.println();

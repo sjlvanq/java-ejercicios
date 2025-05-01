@@ -40,12 +40,12 @@ public class PromedioClase
 				// la fase de procesamiento usa la repetición controlada por contador
 				while (contadorCalificaciones <= 10) // itera 10 veces
 				{
-					System.out.print(“Escriba la calificacion: “); // indicador
+					System.out.print("Escriba la calificacion: "); // indicador
 					int calificacion = entrada.nextInt(); // recibe siguiente calificación
 					de entrada
 						total = total + calificacion; // suma calificación al total
 					contadorCalificaciones = contadorCalificaciones + 1; // incrementa el
-					contador en 1”
+					contador en 1"
 				}
 
 			Fig. 4.8 冷 Cómo solucionar el problema del promedio de la clase mediante la repetición controlada por
@@ -71,7 +71,7 @@ public class PromedioClase
 				// fase de terminación
 				int promedio = total / 10; // la división de enteros produce resultado entero
 			// muestra el total y el promedio de las calificaciones
-			System.out.printf(“%nEl total de las 10 calificaciones es %d%n”, total);
-			System.out.printf(“El promedio de la clase es %d%n”, promedio);
+			System.out.printf("%nEl total de las 10 calificaciones es %d%n", total);
+			System.out.printf("El promedio de la clase es %d%n", promedio);
 		} // fin de main
 } // fin de la clase PromedioClase

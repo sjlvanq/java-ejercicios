@@ -7,12 +7,12 @@ public class PruebaDatosPaquete
 	{
 		DatosPaquete datosPaquete = new DatosPaquete();
 		// imprime la representación String de datosPaquete
-		System.out.printf(“Despues de instanciar:%n%s%n”, datosPaquete);
+		System.out.printf("Despues de instanciar:%n%s%n", datosPaquete);
 		// modifica los datos con acceso a nivel de paquete en el objeto datosPaquete
 		datosPaquete.numero = 77;
-		datosPaquete.cadena = “Adios”;
+		datosPaquete.cadena = "Adios";
 		// imprime la representación String de datosPaquete
-		System.out.printf(“%nDespues de modificar valores:%n%s%n”, datosPaquete);
+		System.out.printf("%nDespues de modificar valores:%n%s%n", datosPaquete);
 	}
 } // fin de la clase PruebaDatosPaquete
 // clase con variables de instancia con acceso a nivel de paquete
@@ -24,12 +24,12 @@ class DatosPaquete
 	public DatosPaquete()
 	{
 		numero = 0;
-		cadena = “Hola”;
+		cadena = "Hola";
 	}
 	// devuelve la representación String del objeto DatosPaquete
 	public String toString()
 	{
-		return String.format(“numero: %d; cadena: %s”, numero, cadena);
+		return String.format("numero: %d; cadena: %s", numero, cadena);
 	}
 } // fin de la clase DatosPaquete
 
@@ -45,7 +45,7 @@ public class Interes
 		BigDecimal principal = BigDecimal.valueOf(1000.0);
 		BigDecimal tasa = BigDecimal.valueOf(0.05); // tasa de interés
 		// muestra los encabezados
-		System.out.printf(“%s%20s%n”, “Anio”, “Monto en deposito”);
+		System.out.printf("%s%20s%n", "Anio", "Monto en deposito");
 		// calcula el monto en depósito para cada uno de diez años
 		for (int anio = 1; anio <= 10; ++anio)
 		{
@@ -53,7 +53,7 @@ public class Interes
 			BigDecimal monto =
 				principal.multiply(tasa.add(BigDecimal.ONE).pow(anio));
 			// muestra el año y el monto
-			System.out.printf(“%4d%20s%n”, anio,
+			System.out.printf("%4d%20s%n", anio,
 					NumberFormat.getCurrencyInstance().format(monto)
 					NumberFormat.getCurrencyInstance().format(monto));
 		}

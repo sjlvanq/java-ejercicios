@@ -19,29 +19,29 @@ public class DivisionEntreCeroConManejoDeExcepciones
 			{
 				try // lee dos números y calcula el cociente
 				{
-					System.out.print(“Introduzca un numerador entero: ”);
+					System.out.print("Introduzca un numerador entero: ");
 					int numerador = explorador.nextInt();
-					System.out.print(“Introduzca un denominador entero: ”);
+					System.out.print("Introduzca un denominador entero: ");
 					int denominador = explorador.nextInt();
 					int resultado = cociente(numerador, denominador);
-					System.out.printf(“%nResultado: %d / %d = %d%n”, numerador,
+					System.out.printf("%nResultado: %d / %d = %d%n", numerador,
 							denominador, resultado);
 					continuarCiclo = false; // entrada exitosa; termina el ciclo
 				}
 				catch (InputMismatchException inputMismatchException)
 				{
-					System.err.printf(“%nExcepcion: %s%n”,
+					System.err.printf("%nExcepcion: %s%n",
 							inputMismatchException);
 					explorador.nextLine(); // descarta entrada para que el usuario
 					intente otra vez
 						System.out.println(
-								“Debe introducir enteros. Intente de nuevo.%n%n”);
+								"Debe introducir enteros. Intente de nuevo.%n%n");
 				}
 				catch (ArithmeticException arithmeticException)
 				{
-					System.err.printf(“%nExcepcion: %s%n”, arithmeticException);
+					System.err.printf("%nExcepcion: %s%n", arithmeticException);
 					System.out.printf(
-							“Cero es un denominador invalido. Intente de nuevo.%n%n”);
+							"Cero es un denominador invalido. Intente de nuevo.%n%n");
 				}
 			} while (continuarCiclo);
 	}

@@ -28,11 +28,11 @@ public class LibroCalificaciones
 		// imprime el arreglo calificaciones en pantalla
 		imprimirCalificaciones();
 		// llama al método obtenerPromedio para calcular la calificación promedio
-		System.out.printf(“%nEl promedio de la clase es %.2f%n”, obtenerPromedio()
+		System.out.printf("%nEl promedio de la clase es %.2f%n", obtenerPromedio()
 				obtenerPromedio());
 		// llama a los métodos obtenerMinima y obtenerMaxima
-		System.out.printf(“La calificacion mas baja es %d%nLa calificacion mas
-				alta es %d%n%n”,
+		System.out.printf("La calificacion mas baja es %d%nLa calificacion mas
+				alta es %d%n%n",
 				obtenerMinima()
 				obtenerMinima(), obtenerMaxima()
 				obtenerMaxima());
@@ -80,7 +80,7 @@ public class LibroCalificaciones
 	// imprime grafico de barras que muestra la distribución de las calificaciones
 	public void imprimirGraficoBarras()
 	{
-		System.out.println(“Distribucion de calificaciones:”);
+		System.out.println("Distribucion de calificaciones:");
 		// almacena la frecuencia de las calificaciones en cada rango de 10
 		calificaciones
 			int[] frecuencia = new int[11];
@@ -90,25 +90,25 @@ public class LibroCalificaciones
 		// para cada frecuencia de calificación, imprime una barra en el gráfico
 		for (int cuenta = 0; cuenta < frecuencia.length; cuenta++)
 		{
-			// imprime etiqueta de barra (“00-09: ”, ..., “90-99: ”, “100: ”)
+			// imprime etiqueta de barra ("00-09: ", ..., "90-99: ", "100: ")
 			if (cuenta == 10)
-				System.out.printf(“%5d: ”, 100);
+				System.out.printf("%5d: ", 100);
 			else
-				System.out.printf(“%02d-%02d: ”,
+				System.out.printf("%02d-%02d: ",
 						cuenta * 10, cuenta * 10 + 9);
 			// imprime barra de asteriscos
 			for (int estrellas = 0; estrellas < frecuencia[cuenta]; estrellas++)
-				System.out.print(“*”);
+				System.out.print("*");
 			System.out.println();
 		}
 	}
 	// imprime el contenido del arreglo de calificaciones
 	public void imprimirCalificaciones()
 	{
-		System.out.println(“Las calificaciones son:%n%n”);
+		System.out.println("Las calificaciones son:%n%n");
 		// imprime la calificación de cada estudiante
 		for (int estudiante = 0; estudiante < calificaciones.length; estudiante++)
-			System.out.printf(“Estudiante %2d: %3d%n”,
+			System.out.printf("Estudiante %2d: %3d%n",
 					estudiante + 1, calificaciones[estudiante]);
 	}
 } // fin de la clase LibroCalificaciones

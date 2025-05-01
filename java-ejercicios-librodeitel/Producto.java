@@ -11,13 +11,13 @@ public class Producto
 		int y; // segundo número introducido por el usuario
 		int z; // tercer número introducido por el usuario
 		int resultado; // producto de los números
-		System.out.print(“Escriba el primer entero: ”); // indicador de entrada
+		System.out.print("Escriba el primer entero: "); // indicador de entrada
 		x = entrada.nextInt(); // lee el primer entero
-		System.out.print(“Escriba el segundo entero: ”); // indicador de entrada
+		System.out.print("Escriba el segundo entero: "); // indicador de entrada
 		y = entrada.nextInt(); // lee el segundo entero
-		System.out.print(“Escriba el tercer entero: ”); // indicador de entrada
+		System.out.print("Escriba el tercer entero: "); // indicador de entrada
 		z = entrada.nextInt(); // lee el tercer entero
 		resultado = x * y * z; // calcula el producto de los números
-		System.out.printf(“El producto es %d%n”, resultado);
+		System.out.printf("El producto es %d%n", resultado);
 	} // fin del método main
 } // fin de la clase Producto

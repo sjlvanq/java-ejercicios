@@ -18,15 +18,15 @@ public class EmpleadoBaseMasComision
 		// si ventasBrutas son inválidas, lanza excepción
 		if (ventasBrutas < 0.0)
 			throw new IllegalArgumentException(
-					“Las ventas brutas deben ser >= 0.0”);
+					"Las ventas brutas deben ser >= 0.0");
 		// si tarifaComision es inválida, lanza excepción
 		if (tarifaComision <= 0.0 || tarifaComision >= 1.0)
 			throw new IllegalArgumentException(
-					“La tarifa de comisión debe ser > 0.0 y < 1.0”);
+					"La tarifa de comisión debe ser > 0.0 y < 1.0");
 		// si salarioBase es inválido, lanza excepción
 		if (salarioBase < 0.0)
 			throw new IllegalArgumentException(
-					“El salario base debe ser >= 0.0”);
+					"El salario base debe ser >= 0.0");
 		this.primerNombre = primerNombre;
 		this.apellidoPaterno = apellidoPaterno;
 		this.numeroSeguroSocial = numeroSeguroSocial;
@@ -54,7 +54,7 @@ public class EmpleadoBaseMasComision
 	{
 		if (ventasBrutas < 0.0)
 			throw new IllegalArgumentException(
-					“Las ventas brutas deben ser >= 0.0”);
+					"Las ventas brutas deben ser >= 0.0");
 		this.ventasBrutas = ventasBrutas;
 	}
 	// devuelve el monto de ventas brutas
@@ -67,7 +67,7 @@ public class EmpleadoBaseMasComision
 	{
 		if (tarifaComision <= 0.0 || tarifaComision > 1.0)
 			throw new IllegalArgumentException(
-					“La tarifa de comisión debe ser > 0.0 y < 1.0”);
+					"La tarifa de comisión debe ser > 0.0 y < 1.0");
 		this.tarifaComision = tarifaComision;
 	}
 	// devuelve la tarifa de comisión
@@ -80,7 +80,7 @@ public class EmpleadoBaseMasComision
 	{
 		if (salarioBase < 0.0)
 			throw new IllegalArgumentException(
-					“El salario base debe ser >= 0.0”);
+					"El salario base debe ser >= 0.0");
 		this.salarioBase = salarioBase;
 	}
 	// devuelve el salario base
@@ -98,11 +98,11 @@ public class EmpleadoBaseMasComision
 	public String toString()
 	{
 		return String.format(
-				“%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f%n%s: %.2f”,
-				“empleado por comision con sueldo base”, primerNombre, apellidoPaterno,
-				“numero de seguro social”, numeroSeguroSocial,
-				“ventas brutas”, ventasBrutas, “tarifa de comision”, tarifaComision,
-				“salario base”, salarioBase);
+				"%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f%n%s: %.2f",
+				"empleado por comision con sueldo base", primerNombre, apellidoPaterno,
+				"numero de seguro social", numeroSeguroSocial,
+				"ventas brutas", ventasBrutas, "tarifa de comision", tarifaComision,
+				"salario base", salarioBase);
 	}
 } // fin de la clase EmpleadoBaseMasComision
 

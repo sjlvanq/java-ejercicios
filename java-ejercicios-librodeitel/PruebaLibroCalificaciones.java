@@ -8,7 +8,7 @@ public class PruebaLibroCalificaciones
 	{
 		// arreglo de calificaciones de estudiantes
 		borré lineas
-			System.out.printf(“Bienvenido al libro de calificaciones para%n%s%n%n”,
+			System.out.printf("Bienvenido al libro de calificaciones para%n%s%n%n",
 					miLibroCalificaciones.obtenerNombreDelCurso());
 		miLibroCalificaciones.procesarCalificaciones();
 	}

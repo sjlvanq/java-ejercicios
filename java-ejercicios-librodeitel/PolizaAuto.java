@@ -50,7 +50,7 @@ public class PolizaAuto
 		switch (obtenerEstado()) // obtiene la abreviación del estado del objeto
 			PolizaAuto
 			{
-				case “MA”: case “NJ”: case “NY”: case “PA”:
+				case "MA": case "NJ": case "NY": case "PA":
 					estadoSinCulpa = true;
 					break;
 				default:

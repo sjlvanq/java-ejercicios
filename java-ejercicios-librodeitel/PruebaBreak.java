@@ -10,9 +10,9 @@ public class PruebaBreak
 			{
 				if ( cuenta == 5 )
 					break; // termina el ciclo si cuenta es 5
-				System.out.printf(“%d ”, cuenta);
+				System.out.printf("%d ", cuenta);
 			}
-		System.out.printf(“%nSalio del ciclo en cuenta = %d%n”, cuenta);
+		System.out.printf("%nSalio del ciclo en cuenta = %d%n", cuenta);
 	}
 } // fin de la clase PruebaBreak
 

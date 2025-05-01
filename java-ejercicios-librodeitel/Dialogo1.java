@@ -6,7 +6,7 @@ public class Dialogo1
 	public static void main(String[] args)
 	{
 		// muestra un diálogo con un mensaje
-		JOptionPane.showMessageDialog(null, “Bienvenido a Java”);
+		JOptionPane.showMessageDialog(null, "Bienvenido a Java");
 	}
 } // fin de la clase Dialogo1
 

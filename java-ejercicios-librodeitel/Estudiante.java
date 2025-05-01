@@ -41,7 +41,7 @@ public class Estudiante
 			// determina y devuelve la calificación en letras del Estudiante
 			public String obtenerCalificacionEstudiante()
 			{
-				String calificacionEstudiante = “”; // se inicializa con objeto String vacío
+				String calificacionEstudiante = ""; // se inicializa con objeto String vacío
 				if (promedio >= 90.0)
 					calificacionEstudiante =
 				else if (promedio >= 80.0)
@@ -55,11 +55,11 @@ public class Estudiante
 
 						113
 
-						“A”;
-				“B”;
-				“C”;
-				“D”;
-				“F”;
+						"A";
+				"B";
+				"C";
+				"D";
+				"F";
 
 				return calificacionEstudiante;
 			}

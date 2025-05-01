@@ -22,7 +22,7 @@ public class UsoDeExcepcionesEncadenadas
 		} // fin de try
 		catch (Exception excepcion ) // excepción lanzada desde metodo2
 		{
-			throw new Exception(“La excepcion se lanzo en metodo1”, excepcion);
+			throw new Exception("La excepcion se lanzo en metodo1", excepcion);
 		}
 	}
 	// llama a metodo3; lanza las excepciones de vuelta a metodo1
@@ -34,13 +34,13 @@ public class UsoDeExcepcionesEncadenadas
 		}
 		catch (Exception excepcion) // excepción lanzada desde metodo3
 		{
-			throw new Exception(“La excepcion se lanzo en metodo2”, excepcion);
+			throw new Exception("La excepcion se lanzo en metodo2", excepcion);
 		}
 	}
 	// lanza excepción Exception de vuelta a metodo2
 	public static void metodo3() throws Exception
 	{
-		throw new Exception(“La excepcion se lanzo en metodo3”);
+		throw new Exception("La excepcion se lanzo en metodo3");
 	}
 } // fin de la clase UsoDeExcepcionesEncadenadas
 

@@ -11,9 +11,9 @@ public class PaqueteDeCartas
 	// el constructor llena el paquete de Cartas
 	public PaqueteDeCartas()
 	{
-		String[] caras = { “As”, “Dos”, “Tres”, “Cuatro”, “Cinco”, “Seis”,
-			“Siete”, “Ocho”, “Nueve”, “Diez”, “Joker”, “Reina”, “Rey” };
-		String[] palos = { “Corazones”, “Diamantes”, “Treboles”, “Espadas” };
+		String[] caras = { "As", "Dos", "Tres", "Cuatro", "Cinco", "Seis",
+			"Siete", "Ocho", "Nueve", "Diez", "Joker", "Reina", "Rey" };
+		String[] palos = { "Corazones", "Diamantes", "Treboles", "Espadas" };
 		paquete = new Carta[NUMERO_DE_CARTAS]; // crea arreglo de objetos Carta
 		cartaActual = 0; // la primera Carta repartida será paquete[0]
 		// llena el paquete con objetos Carta

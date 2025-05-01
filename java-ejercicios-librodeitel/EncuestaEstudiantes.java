@@ -26,10 +26,10 @@ public class EncuestaEstudiantes
 							respuesta, respuestas[respuesta]);
 				}
 			}
-		System.out.printf(“%s%10s%n”, “Calificacion”, “Frecuencia”);
+		System.out.printf("%s%10s%n", "Calificacion", "Frecuencia");
 		// imprime el valor de cada elemento del arreglo
 		for (int calificacion = 1; calificacion < frecuencia.length; calificacion++)
-			System.out.printf(“%6d%10d%n”, calificacion, frecuencia[calificacion]);
+			System.out.printf("%6d%10d%n", calificacion, frecuencia[calificacion]);
 	}
 } // fin de la clase EncuestaEstudiantes
 

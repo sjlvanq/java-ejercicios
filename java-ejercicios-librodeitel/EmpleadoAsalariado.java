@@ -10,7 +10,7 @@ public class EmpleadoAsalariado extends Empleado
 		super(primerNombre, apellidoPaterno, numeroSeguroSocial);
 		if (salarioSemanal < 0.0)
 			throw new IllegalArgumentException(
-					“El salario semanal debe ser >= 0.0”);
+					"El salario semanal debe ser >= 0.0");
 		this.salarioSemanal = salarioSemanal;
 	}
 	// establece el salario
@@ -18,7 +18,7 @@ public class EmpleadoAsalariado extends Empleado
 	{
 		if (salarioSemanal < 0.0)
 			throw new IllegalArgumentException(
-					“El salario semanal debe ser >= 0.0”);
+					"El salario semanal debe ser >= 0.0");
 		this.salarioSemanal = salarioSemanal;
 	}
 	// devuelve el salario
@@ -36,8 +36,8 @@ public class EmpleadoAsalariado extends Empleado
 	@Override
 	public String toString()
 	{
-		return String.format(“empleado asalariado: %s%n%s: $%,.2f”,
-				super.toString(), “salario semanal”, obtenerSalarioSemanal());
+		return String.format("empleado asalariado: %s%n%s: $%,.2f",
+				super.toString(), "salario semanal", obtenerSalarioSemanal());
 	}
 } // fin de la clase EmpleadoAsalariado
 
