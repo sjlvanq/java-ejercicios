@@ -48,7 +48,7 @@ public class Factura implements PorPagar
 		if (precioPorArticulo < 0.0) // valida el precioPorArticulo
 			throw new IllegalArgumentException(
 					"El precio por articulo debe ser >= 0");
-		this.precioPorArtculo = precioPorArticulo;
+		this.precioPorArticulo = precioPorArticulo;
 	}
 	// obtiene el precio por artículo
 	public double obtenerPrecioPorArticulo()
@@ -61,14 +61,14 @@ public class Factura implements PorPagar
 	{
 		return String.format("%s: %n%s: %s (%s) %n%s: %d %n%s: $%,.2f",
 				"factura", "numero de pieza", obtenerNumeroPieza(),
-				obtenerDescripcionPieza(),
+											  obtenerDescripcionPieza(),
 				"cantidad", obtenerCantidad(), "precio por articulo", obtenerPrecioPorArticulo());
-		// método requerido para realizar el contrato con la interfaz PorPagar
-		@Override
-		public double obtenerMontoPago()
-		{
-			return obtenerCantidad() * obtenerPrecioPorArticulo(); // calcula el costo
-			total
-		}
-	} // fin de la clase Factura
+	}
+	// método requerido para realizar el contrato con la interfaz PorPagar
+	@Override
+	public double obtenerMontoPago()
+	{
+		return obtenerCantidad() * obtenerPrecioPorArticulo(); // calcula el costo total
+	}
+} // fin de la clase Factura
 

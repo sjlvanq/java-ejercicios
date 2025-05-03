@@ -46,7 +46,7 @@ public class EmpleadoPorComision extends Object
 	// establece el monto de ventas brutas
 	public void establecerVentasBrutas(double ventasBrutas)
 	{
-		if (ventasBrutas >= 0.0)
+		if (ventasBrutas < 0.0)
 			throw new IllegalArgumentException(
 					"Las ventas brutas deben ser >= 0.0");
 		this.ventasBrutas = ventasBrutas;

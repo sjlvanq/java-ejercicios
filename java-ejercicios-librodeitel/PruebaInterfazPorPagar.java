@@ -22,8 +22,7 @@ public class PruebaInterfazPorPagar
 			// imprime porPagarActual y su monto de pago apropiado
 			System.out.printf("%n%s %n%s: $%,.2f%n",
 					porPagarActual.toString(), // se podría invocar de manera implícita
-					"pago vencido", porPagarActual.obtenerMontoPago()
-					porPagarActual.obtenerMontoPago());
+					"pago vencido", porPagarActual.obtenerMontoPago());
 		}
 	} // fin de main
 } // fin de la clase PruebaInterfazPorPagar

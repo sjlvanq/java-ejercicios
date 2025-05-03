@@ -88,30 +88,30 @@
 |[V]|[ MiLinea.java]( MiLinea.java)	|// Fig. 8.17	|
 |[-]|[ PanelDibujo.java]( PanelDibujo.java)	|// Fig. 8.18	|
 |[V]|[ PruebaDibujo.java]( PruebaDibujo.java)	|// Fig. 8.19	|
-|[ ]|[ EmpleadoPorComision.java]( EmpleadoPorComision.java)	|// Fig. 9.4	|
-|[ ]|[ PruebaEmpleadoPorComision.java]( PruebaEmpleadoPorComision.java)	|// Fig. 9.5	|
-|[ ]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 9.6	|
-|[ ]|[ PruebaEmpleadoBaseMasComision.java]( PruebaEmpleadoBaseMasComision.java)	|// Fig. 9.7	|
-|[ ]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 9.8	|
-|[ ]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 9.9	|
-|[ ]|[ EmpleadoPorComision.java]( EmpleadoPorComision.java)	|// Fig. 9.10	|
-|[ ]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 9.11	|
-|[ ]|[ DemoLabel.java]( DemoLabel.java)	|// Fig 9.13	|
+|[M]|[ EmpleadoPorComision.java]( EmpleadoPorComision.java)	|// Fig. 9.4	|
+|[V]|[ PruebaEmpleadoPorComision.java]( PruebaEmpleadoPorComision.java)	|// Fig. 9.5	|
+|[V]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 9.6	|
+|[V]|[ PruebaEmpleadoBaseMasComision.java]( PruebaEmpleadoBaseMasComision.java)	|// Fig. 9.7	|
+|[-]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 9.8	|
+|[-]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 9.9	|
+|[-]|[ EmpleadoPorComision.java]( EmpleadoPorComision.java)	|// Fig. 9.10	|
+|[-]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 9.11	|
+|[V]|[ DemoLabel.java]( DemoLabel.java)	|// Fig 9.13	|
 |[ ]|[ PruebaPolimorfismo.java]( PruebaPolimorfismo.java)	|// Fig. 10.1	|
-|[ ]|[ Empleado.java]( Empleado.java)	|// Fig. 10.4	|
+|[-]|[ Empleado.java]( Empleado.java)	|// Fig. 10.4	|
 |[ ]|[ EmpleadoAsalariado.java]( EmpleadoAsalariado.java)	|// Fig. 10.5	|
 |[ ]|[ EmpleadoPorHoras.java]( EmpleadoPorHoras.java)	|// Fig. 10.6	|
 |[ ]|[ EmpleadoPorComision.java]( EmpleadoPorComision.java)	|// Fig. 10.7	|
-|[ ]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 10.8	|
+|[-]|[ EmpleadoBaseMasComision.java]( EmpleadoBaseMasComision.java)	|// Fig. 10.8	|
 |[ ]|[ PruebaSistemaNomina.java]( PruebaSistemaNomina.java)	|// Fig. 10.9	|
-|[ ]|[ PorPagar.java]( PorPagar.java)	|// Fig. 10.11	|
-|[ ]|[ Factura.java]( Factura.java)	|// Fig. 10.12	|
-|[ ]|[ Empleado.java]( Empleado.java)	|// Fig. 10.13	|
+|[V]|[ PorPagar.java]( PorPagar.java)	|// Fig. 10.11	|
+|[M]|[ Factura.java]( Factura.java)	|// Fig. 10.12	|
+|[-]|[ Empleado.java]( Empleado.java)	|// Fig. 10.13	|
 |[ ]|[ EmpleadoAsalariado.java]( EmpleadoAsalariado.java)	|// Fig. 10.14	|
 |[ ]|[ PruebaInterfazPorPagar.java]( PruebaInterfazPorPagar.java)	|// Fig. 10.15	|
-|[ ]|[ DivisionEntreCeroSinManejoDeExcepciones.java]( DivisionEntreCeroSinManejoDeExcepciones.java)	|// Fig. 11.2	|
-|[ ]|[ DivisionEntreCeroConManejoDeExcepciones.java]( DivisionEntreCeroConManejoDeExcepciones.java)	|// Fig. 11.3	|
-|[ ]|[ UsoDeExcepciones.java]( UsoDeExcepciones.java)	|// Fig. 11.5	|
-|[ ]|[ UsoDeExcepciones.java]( UsoDeExcepciones.java)	|// Fig. 11.6	|
-|[ ]|[ UsoDeExcepcionesEncadenadas.java]( UsoDeExcepcionesEncadenadas.java)	|// Fig. 11.7	|
-|[ ]|[ PruebaAssert.java]( PruebaAssert.java)	|// Fig. 11.8	|
+|[V]|[ DivisionEntreCeroSinManejoDeExcepciones.java]( DivisionEntreCeroSinManejoDeExcepciones.java)	|// Fig. 11.2	|
+|[V]|[ DivisionEntreCeroConManejoDeExcepciones.java]( DivisionEntreCeroConManejoDeExcepciones.java)	|// Fig. 11.3	|
+|[V]|[ UsoDeExcepciones.java]( UsoDeExcepciones.java)	|// Fig. 11.5	|
+|[-]|[ UsoDeExcepciones.java]( UsoDeExcepciones.java)	|// Fig. 11.6	|
+|[V]|[ UsoDeExcepcionesEncadenadas.java]( UsoDeExcepcionesEncadenadas.java)	|// Fig. 11.7	|
+|[-]|[ PruebaAssert.java]( PruebaAssert.java)	|// Fig. 11.8	|

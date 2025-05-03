@@ -22,15 +22,13 @@ public class UsoDeExcepciones
 			System.out.println("Metodo lanzaExcepcion");
 			throw new Exception(); // genera la excepción
 		}
-		catch (Exception excepcion) // atrapa la excepción lanzada en el bloque
-			try
-			{
-				System.err.println(
-						"La excepcion se manejo en el metodo lanzaExcepcion" );
-				throw excepcion; // vuelve a lanzar para procesarla más adelante
-				// no se llegaría al código que se coloque aquí; se producirían errores
-				de compilación
-			}
+		catch (Exception excepcion) // atrapa la excepción lanzada en el bloque try
+		{
+			System.err.println(
+					"La excepcion se manejo en el metodo lanzaExcepcion" );
+			throw excepcion; // vuelve a lanzar para procesarla más adelante
+			// no se llegaría al código que se coloque aquí; se producirían errores de compilación
+		}
 		finally // se ejecuta sin importar lo que ocurra en los bloques try...catch
 		{
 			System.err.println("Se ejecuto finally en lanzaExcepcion");
@@ -48,12 +46,11 @@ public class UsoDeExcepciones
 		{
 			System.err.println(excepcion);
 		}
-		finally // se ejecuta sin importar lo que ocurra en los bloques
-			try...catch
-			{
-				System.err.println(
-						"Se ejecuto Finally en noLanzaExcepcion");
-			}
+		finally // se ejecuta sin importar lo que ocurra en los bloques try...catch
+		{
+			System.err.println(
+					"Se ejecuto Finally en noLanzaExcepcion");
+		}
 		System.out.println("Fin del metodo noLanzaExcepcion");
 	}
 } // fin de la clase UsoDeExcepciones

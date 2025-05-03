@@ -13,8 +13,7 @@ public class DivisionEntreCeroConManejoDeExcepciones
 	public static void main(String[] args)
 	{
 		Scanner explorador = new Scanner(System.in);
-		boolean continuarCiclo = true; // determina si se necesitan más datos de
-		entrada
+		boolean continuarCiclo = true; // determina si se necesitan más datos de entrada
 			do
 			{
 				try // lee dos números y calcula el cociente
@@ -32,9 +31,8 @@ public class DivisionEntreCeroConManejoDeExcepciones
 				{
 					System.err.printf("%nExcepcion: %s%n",
 							inputMismatchException);
-					explorador.nextLine(); // descarta entrada para que el usuario
-					intente otra vez
-						System.out.println(
+					explorador.nextLine(); // descarta entrada para que el usuario intente otra vez
+						System.out.printf(
 								"Debe introducir enteros. Intente de nuevo.%n%n");
 				}
 				catch (ArithmeticException arithmeticException)

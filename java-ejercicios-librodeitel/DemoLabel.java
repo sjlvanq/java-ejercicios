@@ -10,9 +10,8 @@ public class DemoLabel
 	{
 		// Crea una etiqueta con texto solamente
 		JLabel etiquetaNorte = new JLabel("Norte");
-		// crea un icono a partir de una imagen, para poder colocarla en un objeto
-		JLabel
-			ImageIcon etiquetaIcono = new ImageIcon("GUItip.gif");
+		// crea un icono a partir de una imagen, para poder colocarla en un objeto JLabel
+		ImageIcon etiquetaIcono = new ImageIcon("GUItip.gif");
 		// crea una etiqueta con un icono en vez de texto
 		JLabel etiquetaCentro = new JLabel(etiquetaIcono);
 		// crea otra etiqueta con un icono

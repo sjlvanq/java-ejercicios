@@ -36,25 +36,25 @@ public class PruebaSistemaNomina
 		// procesa en forma genérica a cada elemento en el arreglo de empleados
 		for (Empleado empleadoActual : empleados)
 		{
-			System.out.println(empleadoActual);
-			empleadoActual
-				// invoca a toString
-				// determina si el elemento es un EmpleadoBaseMasComision
-				if (empleadoActual instanceof EmpleadoBaseMasComision)
-				{
-					// conversión descendente de la referencia de Empleado
-					// a una referencia de EmpleadoBaseMasComision
-					EmpleadoBaseMasComision empleado =
-						(EmpleadoBaseMasComision) empleadoActual
-						empleadoActual;
-					empleado.establecerSalarioBase(1.10 * empleado.obtenerSalarioBase());
-					System.out.printf(
-							"el nuevo salario base con 10%% de aumento es: $%,.2f%n",
-							empleado.obtenerSalarioBase());
-				} // fin de if
+			System.out.println(empleadoActual); // invoca a toString
+				
+			// determina si el elemento es un EmpleadoBaseMasComision
+			if (empleadoActual instanceof EmpleadoBaseMasComision)
+			{
+				// conversión descendente de la referencia de Empleado
+				// a una referencia de EmpleadoBaseMasComision
+				EmpleadoBaseMasComision empleado =
+					(EmpleadoBaseMasComision) empleadoActual;
+					
+				empleado.establecerSalarioBase(1.10 * empleado.obtenerSalarioBase());
+				
+				System.out.printf(
+						"el nuevo salario base con 10%% de aumento es: $%,.2f%n",
+						empleado.obtenerSalarioBase());
+			} // fin de if
+			
 			System.out.printf(
-					"ingresos $%,.2f%n%n, empleadoActual.ingresos()
-					empleadoActual.ingresos());
+					"ingresos $%,.2f%n%n", empleadoActual.ingresos());
 		} // fin de for
 		// obtiene el nombre del tipo de cada objeto en el arreglo de empleados
 		for (int j = 0; j < empleados.length; j++)

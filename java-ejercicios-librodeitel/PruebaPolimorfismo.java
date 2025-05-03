@@ -12,28 +12,20 @@ public class PruebaPolimorfismo
 		EmpleadoBaseMasComision empleadoBaseMasComision =
 			new EmpleadoBaseMasComision(
 					"Bob", "Lewis", "333-33-3333", 5000, .04, 300);
-		// invoca a toString en un objeto de la superclase, usando una variable de
-		la superclase
+		// invoca a toString en un objeto de la superclase, usando una variable de la superclase
 			System.out.printf("%s %s:%n%n%s%n%n",
 					"Llamada a toString de EmpleadoPorComision con referencia de superclase ",
-					"a un objeto de la superclase", empleadoPorComision.toString()
-					empleadoPorComision.toString());
-		// invoca a toString en un objeto de la subclase, usando una variable de
-		la subclase
+					"a un objeto de la superclase", empleadoPorComision.toString());
+		// invoca a toString en un objeto de la subclase, usando una variable de la subclase
 			System.out.printf("%s %s:%n%n%s%n%n",
 					"Llamada a toString de EmpleadoBaseMasComision con referencia",
 					"de subclase a un objeto de la subclase",
-					empleadoBaseMasComision.toString()
 					empleadoBaseMasComision.toString());
-		// invoca a toString en un objeto de la subclase, usando una variable de
-		la superclase
-			EmpleadoPorComision empleadoPorComision2 =
-			empleadoBaseMasComision;
+		// invoca a toString en un objeto de la subclase, usando una variable de la superclase
+			EmpleadoPorComision empleadoPorComision2 = empleadoBaseMasComision;
 		System.out.printf("%s %s:%n%n%s%n",
-				"Llamada a toString de EmpleadoBaseMasComision con referencia de
-				superclase",
-				"a un objeto de la subclase", empleadoPorComision2.toString())
-			empleadoPorComision2.toString());
+				"Llamada a toString de EmpleadoBaseMasComision con referencia de superclase",
+				"a un objeto de la subclase", empleadoPorComision2.toString());
 	} // fin de main
 } // fin de la clase PruebaPolimorfismo
 
